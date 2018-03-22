@@ -1,5 +1,3 @@
-require 'hammer_cli_foreman'
-
 module HammerCLIForemanAnsible
   require 'hammer_cli_foreman_ansible/version'
   require 'hammer_cli_foreman_ansible/i18n'

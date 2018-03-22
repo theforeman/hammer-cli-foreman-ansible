@@ -1,6 +1,3 @@
-require 'hammer_cli'
-require 'hammer_cli_foreman'
-
 module HammerCLIForemanAnsible
   class AnsibleRolesCommand < HammerCLIForeman::Command
     resource :ansible_roles
