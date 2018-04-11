@@ -3,16 +3,12 @@ module HammerCLIForemanAnsible
     resource :ansible_roles
 
     class InfoCommand < HammerCLIForeman::InfoCommand
-      output do
-        field :id, _('Id')
-        field :name, _('Name')
-        field :created_at, _('Imported at')
-      end
+      output BaseAnsibleRolesCommand.output_definition
       build_options
     end
 
     class ListCommand < HammerCLIForeman::ListCommand
-      output HammerCLIForemanAnsible::AnsibleRolesCommand::InfoCommand.output_definition
+      output AnsibleRolesCommand::InfoCommand.output_definition
       build_options
     end
 
