@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = HammerCLIForemanAnsible::VERSION
   spec.authors       = ['Oleh Fedorenko']
   spec.email         = ['ofedoren@redhat.com']
-  spec.homepage      = 'https://github.com/ofedoren/hammer-cli-foreman-ansible'
+  spec.homepage      = 'https://github.com/theforeman/hammer-cli-foreman-ansible'
   spec.license       = 'GPL-3.0'
 
   spec.platform      = Gem::Platform::RUBY
