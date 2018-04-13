@@ -1,4 +1,5 @@
 module HammerCLIForemanAnsible
+  require 'hammer_cli'
   require 'hammer_cli_foreman'
   require 'hammer_cli_foreman/host'
   require 'hammer_cli_foreman/hostgroup'

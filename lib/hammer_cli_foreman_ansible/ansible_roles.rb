@@ -19,40 +19,45 @@ module HammerCLIForemanAnsible
       build_options
     end
 
-    class ImportCommand < HammerCLIForeman::Command
+    class ChangedCommad < HammerCLIForeman::Command
+      def execute
+        response = {}
+        response['changed'] = send_request
+        response['message'] = _('The following ansible roles were changed')
+        if response['changed'].empty?
+          response['message'] = _('No changes in ansible roles detected.')
+        end
+        print_data(response)
+        HammerCLI::EX_OK
+      end
+    end
+
+    class ImportCommand < ChangedCommad
       action :import
       command_name 'import'
 
-      failure_message _('Could not import the new roles')
+      failure_message _('Could not import roles')
 
-      def print_data(data)
-        if data.empty?
-          puts 'No changes in ansible roles detected.'
-          return
-        end
-        puts 'The following new ansible roles were imported:'
-        data.each do |role|
-          puts role['name']
+      output do
+        field :message, _('Result'), Fields::LongText
+        collection :changed, _('Imported'), hide_blank: true do
+          field :name, nil
         end
       end
 
       build_options
     end
 
-    class ObsoleteCommand < HammerCLIForeman::Command
+    class ObsoleteCommand < ChangedCommad
       action :obsolete
       command_name 'obsolete'
 
-      failure_message _('Could not import the obsolete roles')
+      failure_message _('Could not obsolete roles')
 
-      def print_data(data)
-        if data.empty?
-          puts 'No changes in ansible roles detected.'
-          return
-        end
-        puts 'The following obsolete ansible roles were imported:'
-        data.each do |role|
-          puts role['name']
+      output do
+        field :message, _('Result'), Fields::LongText
+        collection :changed, _('Obsoleted'), hide_blank: true do
+          field :name, nil
         end
       end
 

@@ -6,7 +6,7 @@ module HammerCLIForemanAnsible
     action :ansible_roles
 
     output do
-      field :id, _('Id'), Fields::Id
+      field :id, _('Id')
       field :name, _('Name')
       field :created_at, _('Imported at'), Fields::Date
     end

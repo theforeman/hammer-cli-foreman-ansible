@@ -1,6 +1,5 @@
 module HammerCLIForemanAnsible
-  class AnsibleCommand < HammerCLIForeman::Command
-    resource :ansible
+  class AnsibleCommand < HammerCLI::AbstractCommand
 
     lazy_subcommand(
       'roles',
