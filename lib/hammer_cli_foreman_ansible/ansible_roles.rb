@@ -19,7 +19,7 @@ module HammerCLIForemanAnsible
       build_options
     end
 
-    class ChangedCommad < HammerCLIForeman::Command
+    class ChangedCommand < HammerCLIForeman::Command
       def execute
         response = {}
         response['changed'] = send_request
@@ -32,7 +32,7 @@ module HammerCLIForemanAnsible
       end
     end
 
-    class ImportCommand < ChangedCommad
+    class ImportCommand < ChangedCommand
       action :import
       command_name 'import'
 
@@ -48,7 +48,7 @@ module HammerCLIForemanAnsible
       build_options
     end
 
-    class ObsoleteCommand < ChangedCommad
+    class ObsoleteCommand < ChangedCommand
       action :obsolete
       command_name 'obsolete'
 
