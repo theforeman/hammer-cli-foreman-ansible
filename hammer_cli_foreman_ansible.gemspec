@@ -4,7 +4,7 @@ require 'hammer_cli_foreman_ansible/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'hammer_cli_foreman_ansible'
-  spec.version       = HammerCLIForemanAnsible::VERSION
+  spec.version       = HammerCLIForemanAnsible.version.dup
   spec.authors       = ['Oleh Fedorenko']
   spec.email         = ['ofedoren@redhat.com']
   spec.homepage      = 'https://github.com/theforeman/hammer-cli-foreman-ansible'
