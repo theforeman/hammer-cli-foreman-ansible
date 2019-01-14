@@ -8,6 +8,13 @@ module HammerCLIForemanAnsible
       'hammer_cli_foreman_ansible/ansible_roles'
     )
 
+    lazy_subcommand(
+      'variables',
+      _('Manage ansible variables'),
+      'HammerCLIForemanAnsible::AnsibleVariablesCommand',
+      'hammer_cli_foreman_ansible/ansible_variables'
+    )
+
     autoload_subcommands
   end
 end
