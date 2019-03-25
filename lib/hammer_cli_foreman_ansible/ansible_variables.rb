@@ -45,6 +45,13 @@ module HammerCLIForemanAnsible
       build_options
     end
 
+    class CreateCommand < HammerCLIForeman::CreateCommand
+      success_message _("Ansible variable [%{variable}] was created.")
+      failure_message _("Could not create the ansible variable")
+
+      build_options
+    end
+
     class DeleteCommand < HammerCLIForeman::DeleteCommand
       success_message _('Ansible variable [%{variable}] was deleted.')
       failure_message _('Could not delete the variable')
