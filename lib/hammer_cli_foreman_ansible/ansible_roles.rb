@@ -1,13 +1,19 @@
+# frozen_string_literal: true
+
 module HammerCLIForemanAnsible
   class AnsibleRolesCommand < HammerCLIForeman::Command
     resource :ansible_roles
 
-    class InfoCommand < HammerCLIForeman::InfoCommand
-      output BaseAnsibleRolesCommand.output_definition
+    class ListCommand < HammerCLIForeman::ListCommand
+      output do
+        field :id, _('Id')
+        field :name, _('Name')
+        field :created_at, _('Imported at'), Fields::Date
+      end
       build_options
     end
 
-    class ListCommand < HammerCLIForeman::ListCommand
+    class InfoCommand < HammerCLIForeman::InfoCommand
       output AnsibleRolesCommand::InfoCommand.output_definition
       build_options
     end
@@ -19,20 +25,7 @@ module HammerCLIForemanAnsible
       build_options
     end
 
-    class ChangedCommand < HammerCLIForeman::Command
-      def execute
-        response = {}
-        response['changed'] = send_request
-        response['message'] = _('The following ansible roles were changed')
-        if response['changed'].empty?
-          response['message'] = _('No changes in ansible roles detected.')
-        end
-        print_data(response)
-        HammerCLI::EX_OK
-      end
-    end
-
-    class ImportCommand < ChangedCommand
+    class ImportCommand < HammerCLIForeman::Command
       action :import
       command_name 'import'
 
@@ -45,10 +38,21 @@ module HammerCLIForemanAnsible
         end
       end
 
+      def execute
+        response = {}
+        response['changed'] = send_request
+        response['message'] = _('The following ansible roles were changed')
+        if response['changed'].empty?
+          response['message'] = _('No changes in ansible roles detected.')
+        end
+        print_data(response)
+        HammerCLI::EX_OK
+      end
+
       build_options
     end
 
-    class ObsoleteCommand < ChangedCommand
+    class ObsoleteCommand < HammerCLIForeman::Command
       action :obsolete
       command_name 'obsolete'
 
@@ -60,6 +64,54 @@ module HammerCLIForemanAnsible
           field :name, nil
         end
       end
+
+      def execute
+        response = {}
+        response['changed'] = send_request
+        response['message'] = _('The following ansible roles were changed')
+        if response['changed'].empty?
+          response['message'] = _('No changes in ansible roles detected.')
+        end
+        print_data(response)
+        HammerCLI::EX_OK
+      end
+
+      build_options
+    end
+
+    class FetchCommand < HammerCLIForeman::Command
+      action :fetch
+      command_name 'fetch'
+
+      failure_message _('Could not fetch roles')
+
+      output do
+        collection :ansible_roles, _('Ansible roles available to be imported') do
+          field :name, nil
+        end
+      end
+
+      build_options
+    end
+
+    class PlayHostsCommand < HammerCLIForeman::Command
+      resource :hosts
+      action :multiple_play_roles
+      command_name 'play-hosts'
+
+      success_message _("Ansible roles are being played. Job ID: %{id}")
+      failure_message _('Could not play roles on hosts')
+
+      build_options
+    end
+
+    class PlayHostgroupsCommand < HammerCLIForeman::Command
+      resource :hostgroups
+      action :multiple_play_roles
+      command_name 'play-hostgroups'
+
+      success_message _("Ansible roles are being played. Job ID: %{id}")
+      failure_message _('Could not play roles on hostgroups')
 
       build_options
     end

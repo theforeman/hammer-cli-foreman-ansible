@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 module HammerCLIForemanAnsible
   class AnsibleCommand < HammerCLI::AbstractCommand
-
     lazy_subcommand(
       'roles',
       _('Manage ansible roles'),

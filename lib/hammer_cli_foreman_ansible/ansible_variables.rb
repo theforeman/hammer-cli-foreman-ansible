@@ -1,9 +1,21 @@
+# frozen_string_literal: true
+
 module HammerCLIForemanAnsible
   class AnsibleVariablesCommand < HammerCLIForeman::Command
     resource :ansible_variables
 
     class ListCommand < HammerCLIForeman::ListCommand
-      output BaseAnsibleVariablesCommand.output_definition
+      output do
+        field :id, _('Id')
+
+        field :variable, _('Variable')
+        field :default_value, _('Default Value')
+        field :variable_type, _('Type')
+
+        field :ansible_role, _('Role')
+        field :ansible_role_id, _('Role Id'), Fields::Id
+      end
+
       build_options
     end
 
@@ -47,20 +59,7 @@ module HammerCLIForemanAnsible
       build_options
     end
 
-    class ChangedCommand < HammerCLIForeman::Command
-      def execute
-        response = {}
-        response['changed'] = send_request
-        response['message'] = _('The following ansible variables were changed')
-        if response['changed'].empty?
-          response['message'] = _('No changes in ansible variables detected.')
-        end
-        print_data(response)
-        HammerCLI::EX_OK
-      end
-    end
-
-    class ImportCommand < ChangedCommand
+    class ImportCommand < HammerCLIForeman::Command
       action :import
       command_name 'import'
 
@@ -73,10 +72,21 @@ module HammerCLIForemanAnsible
         end
       end
 
+      def execute
+        response = {}
+        response['changed'] = send_request
+        response['message'] = _('The following ansible variables were changed')
+        if response['changed'].empty?
+          response['message'] = _('No changes in ansible variables detected.')
+        end
+        print_data(response)
+        HammerCLI::EX_OK
+      end
+
       build_options
     end
 
-    class ObsoleteCommand < ChangedCommand
+    class ObsoleteCommand < HammerCLIForeman::Command
       action :obsolete
       command_name 'obsolete'
 
@@ -87,6 +97,17 @@ module HammerCLIForemanAnsible
         collection :changed, _('Obsoleted'), hide_blank: true do
           field :variable, nil
         end
+      end
+
+      def execute
+        response = {}
+        response['changed'] = send_request
+        response['message'] = _('The following ansible variables were changed')
+        if response['changed'].empty?
+          response['message'] = _('No changes in ansible variables detected.')
+        end
+        print_data(response)
+        HammerCLI::EX_OK
       end
 
       build_options

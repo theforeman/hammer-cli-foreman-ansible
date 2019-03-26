@@ -7,7 +7,6 @@ module HammerCLIForemanAnsible
   require 'hammer_cli_foreman_ansible/version'
   require 'hammer_cli_foreman_ansible/i18n'
   require 'hammer_cli_foreman_ansible/ansible'
-  require 'hammer_cli_foreman_ansible/base'
   require 'hammer_cli_foreman_ansible/ansible_roles'
   require 'hammer_cli_foreman_ansible/host'
   require 'hammer_cli_foreman_ansible/hostgroup'
@@ -19,15 +18,15 @@ module HammerCLIForemanAnsible
     'hammer_cli_foreman_ansible/ansible'
   )
   HammerCLIForeman::Host.lazy_subcommand(
-    HostAnsibleRolesCommand.command_name,
-    HostAnsibleRolesCommand.desc,
-    'HammerCLIForemanAnsible::HostAnsibleRolesCommand',
+    Host::AnsibleRolesCommand.command_name,
+    Host::AnsibleRolesCommand.desc,
+    'HammerCLIForemanAnsible::Host::AnsibleRolesCommand',
     'hammer_cli_foreman_ansible/host'
   )
   HammerCLIForeman::Hostgroup.lazy_subcommand(
-    HostgroupAnsibleRolesCommand.command_name,
-    HostgroupAnsibleRolesCommand.desc,
-    'HammerCLIForemanAnsible::HostgroupAnsibleRolesCommand',
+    Hostgroup::AnsibleRolesCommand.command_name,
+    Hostgroup::AnsibleRolesCommand.desc,
+    'HammerCLIForemanAnsible::Hostgroup::AnsibleRolesCommand',
     'hammer_cli_foreman_ansible/hostgroup'
   )
 end
