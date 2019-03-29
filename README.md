@@ -8,9 +8,9 @@ This Hammer CLI plugin contains set of commands for [foreman_ansible](
 
 This is the list of which version of Foreman Ansible is needed to which version of this plugin.
 
-| hammer_cli_foreman_ansible | 0.1.0+ | 0.2.0+ |
-|----------------------------|--------|--------|
-|            foreman_ansible | 2.2.0+ | 2.3.2+ |
+| hammer_cli_foreman_ansible | 0.1.0+ | 0.2.0+ | 0.3.0+ |
+|----------------------------|--------|--------|--------|
+|            foreman_ansible | 2.2.0+ | 2.3.2+ | 2.3.3+ |
 
 ## Installation
 
