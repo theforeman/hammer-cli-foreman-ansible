@@ -14,7 +14,7 @@ module HammerCLIForemanAnsible
     end
 
     class InfoCommand < HammerCLIForeman::InfoCommand
-      output AnsibleRolesCommand::InfoCommand.output_definition
+      output AnsibleRolesCommand::ListCommand.output_definition
       build_options
     end
 
