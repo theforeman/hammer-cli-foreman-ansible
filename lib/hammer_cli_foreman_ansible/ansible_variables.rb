@@ -29,6 +29,7 @@ module HammerCLIForemanAnsible
           field :validator_rule, _("Rule")
         end
         label _("Override values") do
+          field :override, _("Override"), Fields::Boolean
           field :merge_overrides, _("Merge overrides"), Fields::Boolean
           field :merge_default, _("Merge default value"), Fields::Boolean
           field :avoid_duplicates, _("Avoid duplicates"), Fields::Boolean
