@@ -11,6 +11,8 @@ module HammerCLIForemanAnsible
   require 'hammer_cli_foreman_ansible/host'
   require 'hammer_cli_foreman_ansible/hostgroup'
 
+  require 'hammer_cli_foreman_ansible/command_extensions'
+
   HammerCLI::MainCommand.lazy_subcommand(
     'ansible',
     'Manage foreman ansible',
