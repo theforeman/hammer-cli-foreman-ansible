@@ -1,0 +1,1 @@
+require 'hammer_cli_foreman_ansible/command_extensions/resolver'
