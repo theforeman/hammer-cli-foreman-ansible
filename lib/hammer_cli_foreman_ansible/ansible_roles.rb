@@ -25,6 +25,15 @@ module HammerCLIForemanAnsible
       build_options
     end
 
+    class SyncCommand < HammerCLIForeman::Command
+      action :sync
+      command_name 'sync'
+
+      success_message _('A task to Sync Ansible Roles was created.')
+      failure_message _('Could not sync roles')
+      build_options
+    end
+
     class ImportCommand < HammerCLIForeman::Command
       action :import
       command_name 'import'
@@ -87,7 +96,13 @@ module HammerCLIForemanAnsible
 
       output do
         collection :ansible_roles, _('Ansible roles available to be imported') do
-          field :name, nil
+          field :name, _("Role Name")
+          field :role_action, _("Action")
+          field :variables, _("Variables")
+          field :hosts_count, ("Hosts count")
+          field :hostgroup_count, ("Hostgroup count")
+
+
         end
       end
 
