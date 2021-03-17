@@ -5,6 +5,7 @@ module HammerCLIForemanAnsible
     resource :ansible_variables
 
     class ListCommand < HammerCLIForeman::ListCommand
+
       output do
         field :id, _('Id')
 
@@ -15,7 +16,6 @@ module HammerCLIForemanAnsible
         field :ansible_role, _('Role')
         field :ansible_role_id, _('Role Id'), Fields::Id
       end
-
       build_options
     end
 
