@@ -64,6 +64,16 @@ module HammerCLIForemanAnsible
       success_message _("Ansible variable [%{variable}] updated.")
       failure_message _("Could not update the ansible variable")
 
+      option "--override-value-order", "OVERRIDE_VALUE_ORDER", _("The order in which values are resolved"),
+             :format => HammerCLI::Options::Normalizers::List.new
+
+      def request_params
+        params = super
+        override_order = params['ansible_variable']['override_value_order']
+        params['ansible_variable']['override_value_order'] = override_order.join("\n") if override_order.is_a?(Array)
+        params
+      end
+
       build_options
     end
 
