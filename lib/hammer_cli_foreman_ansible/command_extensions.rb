@@ -1,1 +1,2 @@
 require 'hammer_cli_foreman_ansible/command_extensions/resolver'
+require 'hammer_cli_foreman_ansible/command_extensions/inventory'
