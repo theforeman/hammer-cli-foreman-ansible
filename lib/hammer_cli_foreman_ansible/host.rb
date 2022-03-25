@@ -35,6 +35,43 @@ module HammerCLIForemanAnsible
 
         build_options
       end
+
+      class AddAnsibleRoleCommand < HammerCLIForeman::AddAssociatedCommand
+        prepend HammerCLIForemanAnsible::AssociatedAnsibleResource
+
+        command_name 'add'
+        associated_resource :ansible_roles
+        desc _('Associate an Ansible role')
+
+        success_message _('Ansible role has been associated.')
+        failure_message _('Could not associate the Ansible role')
+
+        validate_options do
+          any(:option_name, :option_id).required
+          any(:option_ansible_role_name, :option_ansible_role_id).required
+        end
+
+        build_options
+      end
+
+      class RemoveAnsibleRoleCommand < HammerCLIForeman::RemoveAssociatedCommand
+        prepend HammerCLIForemanAnsible::AssociatedAnsibleResource
+
+        command_name 'remove'
+        associated_resource :ansible_roles
+        desc _('Disassociate an Ansible role')
+
+        success_message _('Ansible role has been disassociated.')
+        failure_message _('Could not disassociate the Ansible role')
+
+        validate_options do
+          any(:option_name, :option_id).required
+          any(:option_ansible_role_name, :option_ansible_role_id).required
+        end
+
+        build_options
+      end
+
       autoload_subcommands
     end
   end
