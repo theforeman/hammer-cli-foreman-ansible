@@ -11,7 +11,9 @@ module HammerCLIForemanAnsible
       class ListCommand < HammerCLIForeman::ListCommand
         action :ansible_roles
 
-        output HammerCLIForemanAnsible::AnsibleRolesCommand::ListCommand.output_definition
+        output(HammerCLIForemanAnsible::AnsibleRolesCommand::ListCommand.output_definition) do
+          field :inherited, _('Inherited'), Fields::Boolean
+        end
 
         build_options
       end
