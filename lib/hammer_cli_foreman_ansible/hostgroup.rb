@@ -13,6 +13,7 @@ module HammerCLIForemanAnsible
 
         output(HammerCLIForemanAnsible::AnsibleRolesCommand::ListCommand.output_definition) do
           field :inherited, _('Inherited'), Fields::Boolean
+          field :owned, _('Owned'), Fields::Boolean
         end
 
         build_options
@@ -39,11 +40,13 @@ module HammerCLIForemanAnsible
       end
 
       class AddAnsibleRoleCommand < HammerCLIForeman::AddAssociatedCommand
-        prepend HammerCLIForemanAnsible::AssociatedAnsibleResource
+        prepend HammerCLIForemanAnsible::AssociatedAnsibleRole
 
         command_name 'add'
         associated_resource :ansible_roles
         desc _('Associate an Ansible role')
+
+        option '--force', :flag, _('Associate the Ansible role even if it already is associated indirectly')
 
         success_message _('Ansible role has been associated.')
         failure_message _('Could not associate the Ansible role')
@@ -57,7 +60,7 @@ module HammerCLIForemanAnsible
       end
 
       class RemoveAnsibleRoleCommand < HammerCLIForeman::RemoveAssociatedCommand
-        prepend HammerCLIForemanAnsible::AssociatedAnsibleResource
+        prepend HammerCLIForemanAnsible::AssociatedAnsibleRole
 
         command_name 'remove'
         associated_resource :ansible_roles

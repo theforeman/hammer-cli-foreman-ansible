@@ -6,8 +6,24 @@ describe 'hostgroup' do
     let(:ansible_role_1) do
       {
         'id' => 1,
-        'name' => 'role1'
+        'name' => 'role1',
+        'inherited' => false,
+        'owned' => true
       }
+    end
+    let(:ansible_role_2) do
+      {
+        'id' => 2,
+        'name' => 'role2',
+        'inherited' => true,
+        'owned' => false
+      }
+    end
+    let(:ansible_roles) do
+      [
+        ansible_role_1,
+        ansible_role_2
+      ]
     end
 
     it 'requires hostgroup --id' do
@@ -52,6 +68,42 @@ describe 'hostgroup' do
       result = run_cmd(cmd + params)
       assert_cmd(success_result("Ansible role has been associated.\n"), result)
     end
+
+    it 'raises an error on associating an inherited ansible role to host' do
+      params = %w[--id=1 --ansible-role-id=2]
+      expected_result = CommandExpectation.new
+      expected_result.expected_err = [
+        'Could not associate the Ansible role:',
+        '  Ansible role role2 is already inherited from a host group. Please use --force for direct association.',
+        ''
+      ].join("\n")
+      expected_result.expected_exit_code = HammerCLI::EX_USAGE
+
+      api_expects(:hostgroups, :ansible_roles) do |par|
+        par[:id] == '1'
+      end.returns(ansible_roles)
+
+      api_expects_no_call
+
+      result = run_cmd(cmd + params)
+      assert_cmd(expected_result, result)
+    end
+
+    it 'associates inherited ansible role with hostgroup' do
+      params = %w[--id=1 --ansible-role-id=2 --force]
+
+      api_expects(:hostgroups, :ansible_roles) do |par|
+        par[:id] == '1'
+      end.returns(ansible_roles)
+
+      api_expects(:hostgroups, :update) do |par|
+        par['id'] == '1' &&
+          par['hostgroup']['ansible_role_ids'] == %w[1 2]
+      end
+
+      result = run_cmd(cmd + params)
+      assert_cmd(success_result("Ansible role has been associated.\n"), result)
+    end
   end
 
   describe 'remove ansible role' do
@@ -61,12 +113,14 @@ describe 'hostgroup' do
         {
           'id' => 1,
           'name' => 'role1',
-          'inherited' => false
+          'inherited' => false,
+          'owned' => true
         },
         {
           'id' => 2,
           'name' => 'role2',
-          'inherited' => true
+          'inherited' => true,
+          'owned' => false
         }
       ]
     end
@@ -107,7 +161,7 @@ describe 'hostgroup' do
 
       api_expects(:hostgroups, :update) do |par|
         par['id'] == '1' &&
-          par['hostgroup']['ansible_role_ids'] == %w[2]
+          par['hostgroup']['ansible_role_ids'] == %w[]
       end
 
       result = run_cmd(cmd + params)
@@ -119,8 +173,9 @@ describe 'hostgroup' do
       expected_result = CommandExpectation.new
       expected_result.expected_err = [
         'Could not disassociate the Ansible role:',
-        '  Ansible role role2 is inherited and cannot be removed.',
-        ''].join("\n")
+        '  Ansible role role2 is not assigned directly and cannot be removed.',
+        ''
+      ].join("\n")
       expected_result.expected_exit_code = HammerCLI::EX_USAGE
 
       api_expects(:hostgroups, :ansible_roles) do |par|

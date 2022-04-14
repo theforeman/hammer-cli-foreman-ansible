@@ -8,7 +8,7 @@ module HammerCLIForemanAnsible
   require 'hammer_cli_foreman_ansible/i18n'
   require 'hammer_cli_foreman_ansible/ansible'
   require 'hammer_cli_foreman_ansible/ansible_roles'
-  require 'hammer_cli_foreman_ansible/associated_ansible_resource'
+  require 'hammer_cli_foreman_ansible/associated_ansible_role'
   require 'hammer_cli_foreman_ansible/host'
   require 'hammer_cli_foreman_ansible/hostgroup'
 
