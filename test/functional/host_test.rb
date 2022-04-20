@@ -8,7 +8,7 @@ describe 'host' do
         'id' => 1,
         'name' => 'role1',
         'inherited' => false,
-        'owned' => true
+        'directly_assigned' => true
       }
     end
     let(:ansible_role_2) do
@@ -16,7 +16,7 @@ describe 'host' do
         'id' => 2,
         'name' => 'role2',
         'inherited' => true,
-        'owned' => false
+        'directly_assigned' => false
       }
     end
     let(:ansible_roles) do
@@ -114,13 +114,13 @@ describe 'host' do
           'id' => 1,
           'name' => 'role1',
           'inherited' => false,
-          'owned' => true
+          'directly_assigned' => true
         },
         {
           'id' => 2,
           'name' => 'role2',
           'inherited' => true,
-          'owned' => false
+          'directly_assigned' => false
         }
       ]
     end

@@ -13,7 +13,7 @@ module HammerCLIForemanAnsible
 
         output(HammerCLIForemanAnsible::AnsibleRolesCommand::ListCommand.output_definition) do
           field :inherited, _('Inherited'), Fields::Boolean
-          field :owned, _('Owned'), Fields::Boolean
+          field :directly_assigned, _('Directly assigned'), Fields::Boolean
         end
 
         build_options

@@ -20,9 +20,9 @@ module HammerCLIForemanAnsible
     def ids_to_keep_for_addition(roles)
       roles.map do |role|
         # Keep directly associated roles
-        next role['id'] if role['owned']
+        next role['id'] if role['directly_assigned']
 
-        # Host groups can have not inherited and not owned roles in the response.
+        # Host groups can have not inherited and not directly assigned roles in the response.
         # This means those roles are from hosts, skip them.
         # Hosts cannot have such case.
 
@@ -37,7 +37,7 @@ module HammerCLIForemanAnsible
           raise ArgumentError, msg
         end
 
-        # We skip not owned and inherited
+        # We skip not directly assigned and inherited
         # Also skip not inherited for host groups
         nil
       end.compact
@@ -50,14 +50,14 @@ module HammerCLIForemanAnsible
     def ids_to_keep_for_removal(roles)
       roles.map do |role|
         # Keep or remove later directly associated roles
-        next role['id'] if role['owned']
+        next role['id'] if role['directly_assigned']
 
-        # Pre-check to force stop the command if we're trying to remove not owned role
+        # Pre-check to force stop the command if we're trying to remove not directly assigned role
         if role['id'] == option_ansible_role_id
           raise ArgumentError, _('Ansible role %s is not assigned directly and cannot be removed.') % role['name']
         end
 
-        # We skip not owned and inherited
+        # We skip not directly assigned and inherited
         # Also skip not inherited for host groups
         nil
       end.compact
