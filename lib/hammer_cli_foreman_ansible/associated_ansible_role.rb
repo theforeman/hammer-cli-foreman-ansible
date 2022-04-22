@@ -11,6 +11,25 @@ module HammerCLIForemanAnsible
       ids_to_keep_for_addition(roles)
     end
 
+    # Since there are no option_sources available to deal with such cases (AssociatedCommand)
+    # Make sure we get id of the provided role before we try to get already associated ones
+    def get_new_ids
+      associated_identifiers = get_associated_identifiers
+      @associated_identifier = get_associated_identifier
+
+      ids = get_current_ids.map(&:to_s)
+
+      required_ids = associated_identifiers.nil? ? [] : associated_identifiers.map(&:to_s)
+      required_ids << @associated_identifier.to_s unless @associated_identifier.nil?
+
+      ids = if self.class.command_names.include?('remove')
+              ids.delete_if { |id| required_ids.include? id }
+            else
+              ids + required_ids
+            end
+      ids.uniq
+    end
+
     private
 
     # Treat inherited as we do in UI:
@@ -28,7 +47,7 @@ module HammerCLIForemanAnsible
 
         # Pre-check to force stop the command if we're trying to add an already inherited role
         # (in case we don't have it directly associated as well)
-        if option_ansible_role_id == role['id'] && role['inherited']
+        if @associated_identifier == role['id'] && role['inherited']
           next role['id'] if option_force?
 
           msg = _(
@@ -53,7 +72,7 @@ module HammerCLIForemanAnsible
         next role['id'] if role['directly_assigned']
 
         # Pre-check to force stop the command if we're trying to remove not directly assigned role
-        if role['id'] == option_ansible_role_id
+        if role['id'] == @associated_identifier
           raise ArgumentError, _('Ansible role %s is not assigned directly and cannot be removed.') % role['name']
         end
 
