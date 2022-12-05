@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = Dir['{test}/**/*']
 
   spec.add_dependency 'hammer_cli_foreman', '>= 0.12.0'
+  spec.add_dependency 'hammer_cli_foreman_remote_execution'
 
   spec.add_development_dependency 'rake', '>= 12.3.3'
 end
