@@ -3,6 +3,7 @@ module HammerCLIForemanAnsible
   require 'hammer_cli_foreman'
   require 'hammer_cli_foreman/host'
   require 'hammer_cli_foreman/hostgroup'
+  require 'hammer_cli_foreman_remote_execution'
 
   require 'hammer_cli_foreman_ansible/version'
   require 'hammer_cli_foreman_ansible/i18n'
@@ -13,6 +14,8 @@ module HammerCLIForemanAnsible
   require 'hammer_cli_foreman_ansible/hostgroup'
 
   require 'hammer_cli_foreman_ansible/command_extensions'
+
+  HammerCLIForemanRemoteExecution::JobTemplate::InfoCommand.extend_with(HammerCLIForemanAnsible::CommandExtensions::JobTemplate.new)
 
   HammerCLI::MainCommand.lazy_subcommand(
     'ansible',

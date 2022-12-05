@@ -30,6 +30,12 @@ jobs:
           repository: theforeman/hammer-cli-foreman
           ref: master
           path: hammer-cli-foreman
+      - name: Get hammer_cli_foreman_remote_execution
+        uses: actions/checkout@v2
+        with:
+          repository: theforeman/hammer_cli_foreman_remote_execution
+          ref: master
+          path: hammer_cli_foreman_remote_execution
       - name: Get hammer-cli-foreman-ansible
         uses: actions/checkout@v2
         with:
@@ -38,6 +44,7 @@ jobs:
         run: |
           echo "gemspec path: '../hammer-cli', name: 'hammer_cli'" > Gemfile.local.rb
           echo "gemspec path: '../hammer-cli-foreman', name: 'hammer_cli_foreman'" >> Gemfile.local.rb
+          echo "gemspec path: '../hammer_cli_foreman_remote_execution', name: 'hammer_cli_foreman_remote_execution'" >> Gemfile.local.rb
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
