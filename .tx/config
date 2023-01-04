@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[foreman.hammer_cli_foreman_ansible]
+file_filter = locale/<lang>/hammer_cli_foreman_ansible.edit.po
+source_file = locale/hammer_cli_foreman_ansible.pot
+source_lang = en
+type = PO
