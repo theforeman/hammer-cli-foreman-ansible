@@ -20,6 +20,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'hammer_cli_foreman', '>= 0.12.0'
   spec.add_dependency 'hammer_cli_foreman_remote_execution'
 
-  spec.add_development_dependency 'rake', '>= 12.3.3'
   spec.required_ruby_version = '>= 2.7', '< 3.0'
 end
