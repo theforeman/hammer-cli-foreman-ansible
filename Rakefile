@@ -8,6 +8,7 @@ Rake::TestTask.new do |t|
   t.libs << 'lib'
   t.test_files = FileList['test/**/*_test.rb']
   t.verbose = true
+  t.warning = ENV.key?('RUBY_WARNINGS')
 end
 
 namespace :gettext do
