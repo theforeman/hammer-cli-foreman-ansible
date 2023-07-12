@@ -1,0 +1,447 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hammer_cli_foreman_ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: hammer_cli_foreman_ansible 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-23 17:16+0100\n"
+"PO-Revision-Date: 2022-11-23 16:21+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022\n"
+"Language-Team: Georgian (https://app.transifex.com/foreman/teams/114/ka/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ka\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Manage ansible roles"
+msgstr "Ansible-ის როლების მართვა"
+
+msgid "Manage ansible variables"
+msgstr "Ansible-ის ცვლადების მართვა"
+
+msgid "Ansible Inventory"
+msgstr "Ansible-ის ინვენტარი"
+
+msgid "Full response as json"
+msgstr "სრული პასუხი, JSON-ის სახით"
+
+msgid "Job Id"
+msgstr "დავალების ID"
+
+msgid "Data URL"
+msgstr "მონაცემების URL"
+
+msgid "Id"
+msgstr "ID"
+
+msgid "Name"
+msgstr "სახელი"
+
+msgid "Imported at"
+msgstr "შემოტანის დრო"
+
+msgid "Ansible role [%{name}] was deleted."
+msgstr "Ansible-ის როლი [%{name}] წაიშალა."
+
+msgid "Could not delete the role"
+msgstr "როლის წაშლა შეუძლებელია"
+
+msgid "A task to Sync Ansible Roles was created."
+msgstr "Ansible-ის როლების სინქის ამოცანა შეიქმნა."
+
+msgid "Could not sync roles"
+msgstr "როლების სინქრონიზაცია შეუძლებელია"
+
+msgid "Could not import roles"
+msgstr "როლების შემოტანის შეცდომა"
+
+msgid "Result"
+msgstr "შედეგი"
+
+msgid "Imported"
+msgstr "შემოტანილია"
+
+msgid "The following ansible roles were changed"
+msgstr "შეიცვალა Ansible-ის შემდეგი როლები"
+
+msgid "No changes in ansible roles detected."
+msgstr "ცვლილებები Ansible-ის როლებში ვერ ვიპოვე."
+
+msgid "Could not obsolete roles"
+msgstr "როლების მოძველებად გამოცხადების შეცდომა"
+
+msgid "Obsoleted"
+msgstr "ამოღებულია"
+
+msgid "Could not fetch roles"
+msgstr "როლების გამოთხოვის შეცდომა"
+
+msgid "Ansible roles available to be imported"
+msgstr "ხელმისაწვდომია შემოსატანი Ansible-ის როლები"
+
+msgid "Role Name"
+msgstr "როლის სახელი"
+
+msgid "Action"
+msgstr "მოქმედება"
+
+msgid "Variables"
+msgstr "ცვლადები"
+
+msgid "Ansible roles are being played. Job ID: %{id}"
+msgstr "მიმდინარეობს Ansible-ის როლების დაკვრა. დავალების ID: %{id}"
+
+msgid "Could not play roles on hosts"
+msgstr "ჰოსტებზე როლების დაკვრის შეცდომა"
+
+msgid "Could not play roles on hostgroups"
+msgstr "ჰოსტების ჯგუფზე როლების დაკვრის შეცდომა"
+
+msgid "Variable"
+msgstr "ცვლადი"
+
+msgid "Default Value"
+msgstr "ნაგულისხმები მნიშვნელობა"
+
+msgid "Type"
+msgstr "ტიპი"
+
+msgid "Role"
+msgstr "როლი"
+
+msgid "Role Id"
+msgstr "როლის ID"
+
+msgid "Description"
+msgstr "აღწერა"
+
+msgid "Hidden Value?"
+msgstr "დამალული მნიშვნელობა?"
+
+msgid "Validator"
+msgstr "შემმოწმებელი"
+
+msgid "Rule"
+msgstr "წესი"
+
+msgid "Override values"
+msgstr "მნიშვნელობების გადაფარვა"
+
+msgid "Override"
+msgstr "გადაფარვა"
+
+msgid "Merge overrides"
+msgstr "გადაფარვების შერწყმა"
+
+msgid "Merge default value"
+msgstr "ნაგულისხმები მნიშვნელობის შერწყმა"
+
+msgid "Avoid duplicates"
+msgstr "დუბლიკატების აცილება"
+
+msgid "Order"
+msgstr "დალაგება"
+
+msgid "Values"
+msgstr "მნიშვნელობები"
+
+msgid "Match"
+msgstr "დამთხვევა"
+
+msgid "Value"
+msgstr "მნიშვნელობა"
+
+msgid "Ansible variable [%{variable}] was created."
+msgstr "Ansible-ის ცვლადი [%{variable}] შეიქმნა."
+
+msgid "Could not create the ansible variable"
+msgstr "Ansible-ის ცვლადის შექმნის შეცდომა"
+
+msgid "Ansible variable [%{variable}] was deleted."
+msgstr "Ansible-ის ცვლადი [%{variable}] წაიშალა."
+
+msgid "Could not delete the variable"
+msgstr "ცვლადის წაშლის შეცდომა"
+
+msgid "Ansible variable [%{variable}] updated."
+msgstr "Ansible-ის ცვლადი [%{variable}] განახლდა."
+
+msgid "Could not update the ansible variable"
+msgstr "Ansible-ის ცვლადის განახლების შეცდომა"
+
+msgid "The order in which values are resolved"
+msgstr "მიმდევრობა, რომლითაც მნიშვნელობების ამოხსნა ხდება"
+
+msgid "Could not import variables"
+msgstr "ცვლადების შემოტანის შეცდომა"
+
+msgid "The following ansible variables were changed"
+msgstr "შეიცვალა Ansible-ის შემდეგი ცვლადები"
+
+msgid "No changes in ansible variables detected."
+msgstr "Ansible-ის ცვლადების ცვლილება ნაპოვნი არაა."
+
+msgid "Could not obsolete variables"
+msgstr "ცვლადების მოძველებად გამოცხადების შეცდომა"
+
+msgid "Override value, required if omit is false"
+msgstr "მნიშვნელობის გადაფარვა. საჭიროა, თუ ამოგდება გამორთულია"
+
+msgid "Override value created."
+msgstr "გადაფარვის მნიშვნელობა შექმნილია."
+
+msgid "Could not create the override value"
+msgstr "გადამფარავი მნიშვნელობის შექმნის შეცდომა"
+
+msgid "Override value deleted."
+msgstr "ნაპოვნია მნიშვნელობის გადაფარვა."
+
+msgid "Could not delete the override value"
+msgstr "გადაფარვის მნიშვნელობის წაშლის შეცდომა"
+
+msgid ""
+"Ansible role %{name} is already inherited from a host group. Please use "
+"%{option} for direct association."
+msgstr ""
+"Ansible-ის როლი %{name} უკვე მიღებულია მემკვიდრეობით ჰოსტების ჯგუფიდან. "
+"პირდაპირი ასოცირებისთვის გამოიყენეთ %{option}."
+
+msgid "Ansible role %s is not assigned directly and cannot be removed."
+msgstr "Ansible-ის როლი %s პირდაპირ არაა მინიჭებული და ვერ წაიშლება."
+
+msgid "FQDN"
+msgstr "FQDN"
+
+msgid "Host Group"
+msgstr "ჰოსტების ჯგუფი"
+
+msgid "Location"
+msgstr "მდებარეობა"
+
+msgid "Organization"
+msgstr "ორგანიზაცია"
+
+msgid "Domain"
+msgstr "დომენი"
+
+msgid "Foreman domain description"
+msgstr "Foreman-ის დომენის აღწერა"
+
+msgid "Owner name"
+msgstr "მფლობელის სახელი"
+
+msgid "Owner email"
+msgstr "მფლობელის ელფოსტა"
+
+msgid "SSH authorized keys"
+msgstr "ავტორიზებული საჯარო SSH გასაღებები"
+
+msgid "Root password"
+msgstr "Root-ის პაროლი"
+
+msgid "Foreman config groups"
+msgstr "Foreman-ის კონფიგურაციის ჯგუფები"
+
+msgid "Puppet master"
+msgstr "Puppet-ის ძირითადი"
+
+msgid "Puppet environment"
+msgstr "Puppet-ის გარემო"
+
+msgid "Subnets"
+msgstr "ქვექსელები"
+
+msgid "Network"
+msgstr "ქსელი"
+
+msgid "Mask"
+msgstr "ნიღაბი"
+
+msgid "Gateway"
+msgstr "ნაგულისხმები რაუტერი"
+
+msgid "Primary DNS"
+msgstr "ძირითადი DNS"
+
+msgid "Secondary DNS"
+msgstr "მეორადი DNS"
+
+msgid "From"
+msgstr "გამომგზავნი"
+
+msgid "To"
+msgstr "ვის"
+
+msgid "Boot mode"
+msgstr "ჩატვირთვის რეჟიმი"
+
+msgid "IPAM"
+msgstr "IPAM"
+
+msgid "VLAN ID"
+msgstr "VLAN ID"
+
+msgid "MTU"
+msgstr "MTU"
+
+msgid "NIC delay"
+msgstr "NIC-ის დაყოვნება"
+
+msgid "Network type"
+msgstr "ქსელის ტიპი"
+
+msgid "Network interfaces"
+msgstr "ქსელის ინტერფეისები"
+
+msgid "Interface Name"
+msgstr "ინტერფეისის სახელი"
+
+msgid "Identifier"
+msgstr "იდენტიფიკატორი"
+
+msgid "Attributes"
+msgstr "ატრიბუტები"
+
+msgid "MAC address"
+msgstr "MAC მისამართი"
+
+msgid "IPv4 address"
+msgstr "IPv4 მისამართი"
+
+msgid "IPv6 address"
+msgstr "IPv6 მისამართი"
+
+msgid "Virtual"
+msgstr "ვირტუალური"
+
+msgid "Link"
+msgstr "კავშირი"
+
+msgid "Managed"
+msgstr "მართული"
+
+msgid "Primary"
+msgstr "ძირითადი"
+
+msgid "Provision"
+msgstr "მუშაობისთვის მომზადება"
+
+msgid "IPv6 subnet"
+msgstr "IPv6 ქვექსელი"
+
+msgid "Tag"
+msgstr "იარლიყი"
+
+msgid "Attached to"
+msgstr "მიმაგრებულია"
+
+msgid "Attached devices"
+msgstr "მიმაგრებული ინტერფეისები"
+
+msgid "Subnet"
+msgstr "ქვექსელი"
+
+msgid "Foreman Users"
+msgstr "Foreman-ის მომხმარებლები"
+
+msgid "First name"
+msgstr "სახელი"
+
+msgid "Last name"
+msgstr "გვარი"
+
+msgid "Email"
+msgstr "ელ-ფოსტა"
+
+msgid "Full name"
+msgstr "სრული სახელი"
+
+msgid "Foreman Ansible Roles"
+msgstr "Foreman-ის Ansible-ის როლები"
+
+msgid "Ansible role check mode"
+msgstr "Ansible-ის როლის შემოწმების რეჟიმი"
+
+msgid "Host packages"
+msgstr "ჰოსტის აკეტები"
+
+msgid "Host registration insights"
+msgstr "ჰოსტის რეგისტრაციის insghts-ი"
+
+msgid "Host registration remote execution"
+msgstr "ჰოსტის რეგისტრაციის დაშორებული გაშვება"
+
+msgid "Remote execution ssh keys"
+msgstr "დაშორებული გაშვების SSH გასაღებები"
+
+msgid "Remote execution ssh user"
+msgstr "დაშორებული გაშვების SSH მომხმარებელი"
+
+msgid "Remote execution effective user method"
+msgstr "დაშორებული გაშვების ეფექტური მომხმარებლის მეთოდი"
+
+msgid "Remote execution connect by IP"
+msgstr "დაშორებული გაშვების IP-ით მიერთება"
+
+msgid "Manage Ansible roles on a host"
+msgstr "ჰოსტზე Ansible-ს როლების მართვა"
+
+msgid "Inherited"
+msgstr "მემკვიდრეობით"
+
+msgid "Directly assigned"
+msgstr "პირდაპირ მინიჭებული"
+
+msgid "Could not play roles on a host"
+msgstr "ჰოსტზე როლების დაკვრის შეცდომა"
+
+msgid "Ansible roles were assigned to the host"
+msgstr "ჰოსტზე Ansible-ის ჯგუფები მინიჭებულია"
+
+msgid "Could not assign roles to the host"
+msgstr "ჰოსტზე როლების მინიჭების შეცდომა"
+
+msgid "Associate an Ansible role"
+msgstr "Ansible-ის როლის ასოცირება"
+
+msgid "Associate the Ansible role even if it already is associated indirectly"
+msgstr ""
+"Ansible-ის როლის ასოცირება მაშინაც კი, თუ ის არაპირდაპირ მაინცაა ასოცირებული"
+
+msgid "Ansible role has been associated."
+msgstr "Ansible-ის როლი ასოცირებულია."
+
+msgid "Could not associate the Ansible role"
+msgstr "Ansible-ის როლის ასოცირების შეცდომა"
+
+msgid "Disassociate an Ansible role"
+msgstr "Ansible-ის როლის დისასოციაცია"
+
+msgid "Ansible role has been disassociated."
+msgstr "Ansible-ის როლი დისასოცირებულია."
+
+msgid "Could not disassociate the Ansible role"
+msgstr "Ansible-ის როლის დისასოცირების შეცდომა"
+
+msgid "Manage Ansible roles on a hostgroup"
+msgstr "ჰოსტების ჯგუფის Ansible-ის როლების მართვა"
+
+msgid "Could not play roles on a hostgroup"
+msgstr "ჰოსტების ჯგუფზე როლების დაკვრის შეცდომა"
+
+msgid "Ansible roles were assigned to the hostgroup"
+msgstr "ჰოსტების ჯგუფზე Ansible-ის როლები მინიჭებულია"
+
+msgid "Could not assign roles to the hostgroup"
+msgstr "ჰოსტების ჯგუფზე Ansible-ის როლების მინიჭების შეცდომა"
+
+msgid "Ansible Callback Enabled"
+msgstr ""

@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hammer_cli_foreman_ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Baptiste Agasse <baptiste.agasse@gmail.com>, 2022
+# 21966816214bc546c1fc8a185e75ca1c, 2022
+# Bryan Kearney <bryan.kearney@gmail.com>, 2022
+# Pierre-Emmanuel Dutang <dutangp@gmail.com>, 2022
+# Claer <transiblu@claer.hammock.fr>, 2022
+# Amit Upadhye <aupadhye@redhat.com>, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: hammer_cli_foreman_ansible 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-23 17:16+0100\n"
+"PO-Revision-Date: 2022-11-23 16:21+0000\n"
+"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
+"Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
+"1000000 == 0 ? 1 : 2;\n"
+
+msgid "Manage ansible roles"
+msgstr "Gérer les rôles Ansible"
+
+msgid "Manage ansible variables"
+msgstr "Gérer les variables Ansible"
+
+msgid "Ansible Inventory"
+msgstr "Inventaire Ansible"
+
+msgid "Full response as json"
+msgstr "Réponse complète en json"
+
+msgid "Job Id"
+msgstr "Id Job"
+
+msgid "Data URL"
+msgstr "URL des données"
+
+msgid "Id"
+msgstr "Id"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Imported at"
+msgstr "Importé à"
+
+msgid "Ansible role [%{name}] was deleted."
+msgstr "Le rôle Ansible [%{name}] a été supprimé."
+
+msgid "Could not delete the role"
+msgstr "Impossible de supprimer le rôle"
+
+msgid "A task to Sync Ansible Roles was created."
+msgstr "Une tâche de synchronisation des rôles Ansible a été créée."
+
+msgid "Could not sync roles"
+msgstr "Impossible de sync les rôles"
+
+msgid "Could not import roles"
+msgstr "Impossible d'importer les rôles"
+
+msgid "Result"
+msgstr "Résultat"
+
+msgid "Imported"
+msgstr "Importé"
+
+msgid "The following ansible roles were changed"
+msgstr "Les rôles Ansible suivants ont été modifiés"
+
+msgid "No changes in ansible roles detected."
+msgstr "Aucun changement dans les rôles Ansible n'a été détecté."
+
+msgid "Could not obsolete roles"
+msgstr "Impossible de rendre les rôles obsolètes"
+
+msgid "Obsoleted"
+msgstr "Rendu obsolète"
+
+msgid "Could not fetch roles"
+msgstr "Impossible de récupérer les rôles"
+
+msgid "Ansible roles available to be imported"
+msgstr "Rôles Ansible disponibles pour être importés"
+
+msgid "Role Name"
+msgstr "Nom du rôle"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Variables"
+msgstr "Variables"
+
+msgid "Ansible roles are being played. Job ID: %{id}"
+msgstr "Des rôles Ansible activés. Job ID : %{id}"
+
+msgid "Could not play roles on hosts"
+msgstr "Impossible d’activer les rôles sur les hôtes"
+
+msgid "Could not play roles on hostgroups"
+msgstr "Impossible d’activer les rôles sur les groupes d'hôtes"
+
+msgid "Variable"
+msgstr "Variable"
+
+msgid "Default Value"
+msgstr "Valeur par défaut"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Role"
+msgstr "Rôle"
+
+msgid "Role Id"
+msgstr "Id Rôle"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Hidden Value?"
+msgstr "Valeur cachée ?"
+
+msgid "Validator"
+msgstr "Validateur"
+
+msgid "Rule"
+msgstr "Règle"
+
+msgid "Override values"
+msgstr "Surcharger les valeurs"
+
+msgid "Override"
+msgstr "Remplacement"
+
+msgid "Merge overrides"
+msgstr "Fusionner les surcharges"
+
+msgid "Merge default value"
+msgstr "Fusionner la valeur par défaut"
+
+msgid "Avoid duplicates"
+msgstr "Eviter les doublons"
+
+msgid "Order"
+msgstr "Commande"
+
+msgid "Values"
+msgstr "Valeurs"
+
+msgid "Match"
+msgstr "Correspond"
+
+msgid "Value"
+msgstr "Valeur"
+
+msgid "Ansible variable [%{variable}] was created."
+msgstr "La variable Ansible [%{variable}] a été créée."
+
+msgid "Could not create the ansible variable"
+msgstr "Impossible de créer la variable Ansible"
+
+msgid "Ansible variable [%{variable}] was deleted."
+msgstr "La variable Ansible [%{variable}] a été supprimée."
+
+msgid "Could not delete the variable"
+msgstr "Impossible de supprimer la variable"
+
+msgid "Ansible variable [%{variable}] updated."
+msgstr "Variable Ansible [%{variable}] mise à jour."
+
+msgid "Could not update the ansible variable"
+msgstr "Impossible de mettre à jour la variable Ansible"
+
+msgid "The order in which values are resolved"
+msgstr "L'ordre dans lequel les valeurs sont interprétées"
+
+msgid "Could not import variables"
+msgstr "Impossible d'importer des variables"
+
+msgid "The following ansible variables were changed"
+msgstr "Les variables Ansible suivantes ont été modifiées"
+
+msgid "No changes in ansible variables detected."
+msgstr "Aucun changement dans les variables ansible n'a été détecté."
+
+msgid "Could not obsolete variables"
+msgstr "Impossible de rendre les variables obsolètes"
+
+msgid "Override value, required if omit is false"
+msgstr "Remplacer la valeur, requis si Omettre est sur false"
+
+msgid "Override value created."
+msgstr "Valeur de substitution créée."
+
+msgid "Could not create the override value"
+msgstr "Impossible de créer la surcharge de valeur"
+
+msgid "Override value deleted."
+msgstr "Valeur de substitution supprimée."
+
+msgid "Could not delete the override value"
+msgstr "Impossible de supprimer cette surcharge de valeur"
+
+msgid ""
+"Ansible role %{name} is already inherited from a host group. Please use "
+"%{option} for direct association."
+msgstr ""
+"Le rôle Ansible %{name} est déjà hérité d'un groupe d'hôtes. Veuillez "
+"utiliser %{option} pour une association directe."
+
+msgid "Ansible role %s is not assigned directly and cannot be removed."
+msgstr ""
+"Le rôle Ansible %s n'est pas attribué directement et ne peut être supprimé."
+
+msgid "FQDN"
+msgstr "FQDN"
+
+msgid "Host Group"
+msgstr "Groupe d'hôtes"
+
+msgid "Location"
+msgstr "Emplacement"
+
+msgid "Organization"
+msgstr "Organisation"
+
+msgid "Domain"
+msgstr "Domaine"
+
+msgid "Foreman domain description"
+msgstr "Description du domaine Foreman"
+
+msgid "Owner name"
+msgstr "Nom du propriétaire"
+
+msgid "Owner email"
+msgstr "Email du propriétaire"
+
+msgid "SSH authorized keys"
+msgstr "Clés autorisées SSH"
+
+msgid "Root password"
+msgstr "Le mot de passe root"
+
+msgid "Foreman config groups"
+msgstr "Gérer les groupes de configuration de Foreman"
+
+msgid "Puppet master"
+msgstr "Puppet Master"
+
+msgid "Puppet environment"
+msgstr "Environnement Puppet"
+
+msgid "Subnets"
+msgstr "Sous-réseaux"
+
+msgid "Network"
+msgstr "Réseau"
+
+msgid "Mask"
+msgstr "Masque"
+
+msgid "Gateway"
+msgstr "Passerelle"
+
+msgid "Primary DNS"
+msgstr "DNS Principal"
+
+msgid "Secondary DNS"
+msgstr "DNS Secondaire"
+
+msgid "From"
+msgstr "De"
+
+msgid "To"
+msgstr "à"
+
+msgid "Boot mode"
+msgstr "Mode de démarrage"
+
+msgid "IPAM"
+msgstr "IPAM"
+
+msgid "VLAN ID"
+msgstr "VLAN ID"
+
+msgid "MTU"
+msgstr "MTU"
+
+msgid "NIC delay"
+msgstr "Retard NIC"
+
+msgid "Network type"
+msgstr "Type de réseau"
+
+msgid "Network interfaces"
+msgstr "Interfaces réseau"
+
+msgid "Interface Name"
+msgstr "Nom de l'interface"
+
+msgid "Identifier"
+msgstr "Identificateur"
+
+msgid "Attributes"
+msgstr "Attributs"
+
+msgid "MAC address"
+msgstr "Adresse MAC"
+
+msgid "IPv4 address"
+msgstr "Adresse IPv4"
+
+msgid "IPv6 address"
+msgstr "Adresse IPv6"
+
+msgid "Virtual"
+msgstr "Virtuel"
+
+msgid "Link"
+msgstr "Lien"
+
+msgid "Managed"
+msgstr "Géré"
+
+msgid "Primary"
+msgstr "Primaire"
+
+msgid "Provision"
+msgstr "Mettre en service"
+
+msgid "IPv6 subnet"
+msgstr "Sous-réseau IPv6"
+
+msgid "Tag"
+msgstr "Balise"
+
+msgid "Attached to"
+msgstr "Attaché à"
+
+msgid "Attached devices"
+msgstr "Périphériques attachés"
+
+msgid "Subnet"
+msgstr "Sous-réseau"
+
+msgid "Foreman Users"
+msgstr "Utilisateurs Foremean"
+
+msgid "First name"
+msgstr "Prénom"
+
+msgid "Last name"
+msgstr "Nom de famille"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Full name"
+msgstr "Nom complet"
+
+msgid "Foreman Ansible Roles"
+msgstr "Rôles Ansible de Foreman"
+
+msgid "Ansible role check mode"
+msgstr "Mode de vérification des rôles Ansible"
+
+msgid "Host packages"
+msgstr "Paquets de l’hôte"
+
+msgid "Host registration insights"
+msgstr "Contenu de l’enregistrement de l’hôte"
+
+msgid "Host registration remote execution"
+msgstr "Exécution à distance de l'enregistrement de l'hôte"
+
+msgid "Remote execution ssh keys"
+msgstr "Exécution à distance des clés ssh"
+
+msgid "Remote execution ssh user"
+msgstr "Exécution à distance utilisateur ssh"
+
+msgid "Remote execution effective user method"
+msgstr "Méthode d'utilisateur efficace pour l'exécution à distance"
+
+msgid "Remote execution connect by IP"
+msgstr "Exécution à distance connectée par IP"
+
+msgid "Manage Ansible roles on a host"
+msgstr "Gérer les rôles Ansible sur un hôte"
+
+msgid "Inherited"
+msgstr "Hérité"
+
+msgid "Directly assigned"
+msgstr "Directement affecté"
+
+msgid "Could not play roles on a host"
+msgstr "Impossible de jouer des rôles sur un hôte"
+
+msgid "Ansible roles were assigned to the host"
+msgstr "Les rôles Ansible ont été assignés à l'hôte"
+
+msgid "Could not assign roles to the host"
+msgstr "Impossible d'assigner des rôles à l'hôte"
+
+msgid "Associate an Ansible role"
+msgstr "Associer un rôle Ansible"
+
+msgid "Associate the Ansible role even if it already is associated indirectly"
+msgstr "Associer le rôle Ansible même s'il est déjà associé indirectement"
+
+msgid "Ansible role has been associated."
+msgstr "Le rôle Ansible a été associé."
+
+msgid "Could not associate the Ansible role"
+msgstr "Impossible d'associer le rôle Ansible"
+
+msgid "Disassociate an Ansible role"
+msgstr "Désassocier un rôle Ansible"
+
+msgid "Ansible role has been disassociated."
+msgstr "Le rôle d'Ansible a été dissocié."
+
+msgid "Could not disassociate the Ansible role"
+msgstr "Impossible de dissocier le rôle Ansible"
+
+msgid "Manage Ansible roles on a hostgroup"
+msgstr "Gérer les rôles Ansible sur un groupe d'hôtes"
+
+msgid "Could not play roles on a hostgroup"
+msgstr "Impossible de jouer des rôles sur un groupe d'hôtes"
+
+msgid "Ansible roles were assigned to the hostgroup"
+msgstr "Les rôles Ansible ont été assignés au groupe d'hôtes"
+
+msgid "Could not assign roles to the hostgroup"
+msgstr "Impossible d'attribuer des rôles au groupe d'hôtes"
+
+msgid "Ansible Callback Enabled"
+msgstr ""
