@@ -11,31 +11,12 @@ Rake::TestTask.new do |t|
   t.warning = ENV.key?('RUBY_WARNINGS')
 end
 
-namespace :gettext do
-  desc 'Update pot file'
-  task :setup do
-    require 'hammer_cli_foreman_ansible/version'
-    require 'hammer_cli_foreman_ansible/i18n'
-    require 'gettext/tools/task'
-
-    domain = HammerCLIForemanAnsible::I18n::LocaleDomain.new
-    GetText::Tools::Task.define do |task|
-      task.package_name = domain.domain_name
-      task.package_version = HammerCLIForemanAnsible.version.to_s
-      task.domain = domain.domain_name
-      task.mo_base_directory = domain.locale_dir
-      task.po_base_directory = domain.locale_dir
-      task.files = domain.translated_files
-    end
-  end
-
-  desc 'Update pot file'
-  task find: [:setup] do
-    Rake::Task['gettext:po:update'].invoke
-  end
-end
-
 namespace :pkg do
   desc 'Generate package source gem'
   task generate_source: :build
 end
+
+require 'hammer_cli_foreman_ansible/version'
+require 'hammer_cli_foreman_ansible/i18n'
+require 'hammer_cli/i18n/find_task'
+HammerCLI::I18n::FindTask.define(HammerCLIForemanAnsible::I18n::LocaleDomain.new, HammerCLIForemanAnsible.version.to_s)
