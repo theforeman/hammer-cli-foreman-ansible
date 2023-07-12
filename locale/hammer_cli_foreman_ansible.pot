@@ -1,0 +1,628 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hammer_cli_foreman_ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: hammer_cli_foreman_ansible 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-12 14:40+0000\n"
+"PO-Revision-Date: 2023-07-12 14:40+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../lib/hammer_cli_foreman_ansible/ansible.rb:7
+msgid "Manage ansible roles"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible.rb:14
+msgid "Manage ansible variables"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible.rb:21
+msgid "Ansible Inventory"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_inventory.rb:10
+#: ../lib/hammer_cli_foreman_ansible/ansible_inventory.rb:25
+msgid "Full response as json"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_inventory.rb:42
+msgid "Job Id"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_inventory.rb:43
+msgid "Data URL"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:9
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:10
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:38
+msgid "Id"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:10
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:9
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:25
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:61
+msgid "Name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:11
+msgid "Imported at"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:22
+msgid "Ansible role [%{name}] was deleted."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:23
+msgid "Could not delete the role"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:32
+msgid "A task to Sync Ansible Roles was created."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:33
+msgid "Could not sync roles"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:41
+msgid "Could not import roles"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:44
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:71
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:87
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:114
+msgid "Result"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:45
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:88
+msgid "Imported"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:53
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:80
+msgid "The following ansible roles were changed"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:55
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:82
+msgid "No changes in ansible roles detected."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:68
+msgid "Could not obsolete roles"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:72
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:115
+msgid "Obsoleted"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:95
+msgid "Could not fetch roles"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:98
+msgid "Ansible roles available to be imported"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:99
+msgid "Role Name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:100
+msgid "Action"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:101
+msgid "Variables"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:117
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:128
+#: ../lib/hammer_cli_foreman_ansible/host.rb:26
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:26
+msgid "Ansible roles are being played. Job ID: %{id}"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:118
+msgid "Could not play roles on hosts"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:129
+msgid "Could not play roles on hostgroups"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:12
+msgid "Variable"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:13
+msgid "Default Value"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:14
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:28
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:57
+msgid "Type"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:16
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:91
+msgid "Role"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:17
+msgid "Role Id"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:24
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:39
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:75
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:84
+msgid "Description"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:25
+msgid "Hidden Value?"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:27
+msgid "Validator"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:29
+msgid "Rule"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:31
+msgid "Override values"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:32
+msgid "Override"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:33
+msgid "Merge overrides"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:34
+msgid "Merge default value"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:35
+msgid "Avoid duplicates"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:36
+msgid "Order"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:37
+msgid "Values"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:39
+msgid "Match"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:40
+msgid "Value"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:50
+msgid "Ansible variable [%{variable}] was created."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:51
+msgid "Could not create the ansible variable"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:57
+msgid "Ansible variable [%{variable}] was deleted."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:58
+msgid "Could not delete the variable"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:64
+msgid "Ansible variable [%{variable}] updated."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:65
+msgid "Could not update the ansible variable"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:67
+msgid "The order in which values are resolved"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:84
+msgid "Could not import variables"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:96
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:123
+msgid "The following ansible variables were changed"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:98
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:125
+msgid "No changes in ansible variables detected."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:111
+msgid "Could not obsolete variables"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:138
+msgid "Override value, required if omit is false"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:140
+msgid "Override value created."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:141
+msgid "Could not create the override value"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:150
+msgid "Override value deleted."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:151
+msgid "Could not delete the override value"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/associated_ansible_role.rb:53
+msgid ""
+"Ansible role %{name} is already inherited from a host group. Please use %{opti"
+"on} for direct association."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/associated_ansible_role.rb:76
+msgid "Ansible role %s is not assigned directly and cannot be removed."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:10
+msgid "FQDN"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:11
+msgid "Host Group"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:12
+msgid "Location"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:13
+msgid "Organization"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:14
+msgid "Domain"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:15
+msgid "Foreman domain description"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:16
+msgid "Owner name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:17
+msgid "Owner email"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:18
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:86
+msgid "SSH authorized keys"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:19
+msgid "Root password"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:20
+msgid "Foreman config groups"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:21
+msgid "Puppet master"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:22
+msgid "Puppet environment"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:24
+msgid "Subnets"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:26
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:62
+msgid "Network"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:27
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:63
+msgid "Mask"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:28
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:64
+msgid "Gateway"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:29
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:65
+msgid "Primary DNS"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:30
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:66
+msgid "Secondary DNS"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:31
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:67
+msgid "From"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:32
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:68
+msgid "To"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:33
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:69
+msgid "Boot mode"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:34
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:70
+msgid "IPAM"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:35
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:71
+msgid "VLAN ID"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:36
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:72
+msgid "MTU"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:37
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:73
+msgid "NIC delay"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:38
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:74
+msgid "Network type"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:42
+msgid "Network interfaces"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:43
+msgid "Interface Name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:44
+msgid "Identifier"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:45
+msgid "Attributes"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:46
+msgid "MAC address"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:47
+msgid "IPv4 address"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:48
+msgid "IPv6 address"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:49
+msgid "Virtual"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:50
+msgid "Link"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:51
+msgid "Managed"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:52
+msgid "Primary"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:53
+msgid "Provision"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:54
+msgid "IPv6 subnet"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:55
+msgid "Tag"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:56
+msgid "Attached to"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:58
+msgid "Attached devices"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:60
+msgid "Subnet"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:80
+msgid "Foreman Users"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:81
+msgid "First name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:82
+msgid "Last name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:83
+msgid "Email"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:85
+msgid "Full name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:90
+msgid "Foreman Ansible Roles"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:94
+msgid "Ansible role check mode"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:95
+msgid "Host packages"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:96
+msgid "Host registration insights"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:97
+msgid "Host registration remote execution"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:98
+msgid "Remote execution ssh keys"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:99
+msgid "Remote execution ssh user"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:100
+msgid "Remote execution effective user method"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:101
+msgid "Remote execution connect by IP"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/job_template.rb:14
+msgid "Ansible Callback Enabled"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:9
+msgid "Manage Ansible roles on a host"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:15
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:15
+msgid "Inherited"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:16
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:16
+msgid "Directly assigned"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:27
+msgid "Could not play roles on a host"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:36
+msgid "Ansible roles were assigned to the host"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:37
+msgid "Could not assign roles to the host"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:47
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:47
+msgid "Associate an Ansible role"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:49
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:49
+msgid "Associate the Ansible role even if it already is associated indirectly"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:51
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:51
+msgid "Ansible role has been associated."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:52
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:52
+msgid "Could not associate the Ansible role"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:67
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:67
+msgid "Disassociate an Ansible role"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:69
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:69
+msgid "Ansible role has been disassociated."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/host.rb:70
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:70
+msgid "Could not disassociate the Ansible role"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:9
+msgid "Manage Ansible roles on a hostgroup"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:27
+msgid "Could not play roles on a hostgroup"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:36
+msgid "Ansible roles were assigned to the hostgroup"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:37
+msgid "Could not assign roles to the hostgroup"
+msgstr ""

@@ -1,0 +1,452 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hammer_cli_foreman_ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Transifex Bot <>, 2022
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2022
+# Bryan Kearney <bryan.kearney@gmail.com>, 2022
+# 0868a4d1af5275b3f70b0a6dac4c99a4, 2022
+# Amit Upadhye <aupadhye@redhat.com>, 2022
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: hammer_cli_foreman_ansible 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-23 17:16+0100\n"
+"PO-Revision-Date: 2022-11-23 16:21+0000\n"
+"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2022\n"
+"Language-Team: Japanese (https://app.transifex.com/foreman/teams/114/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Manage ansible roles"
+msgstr "Ansible ロールの管理"
+
+msgid "Manage ansible variables"
+msgstr "Ansible 変数の管理"
+
+msgid "Ansible Inventory"
+msgstr "Ansible インベントリー"
+
+msgid "Full response as json"
+msgstr "json としての完全な応答"
+
+msgid "Job Id"
+msgstr "ジョブ ID"
+
+msgid "Data URL"
+msgstr "データ URL"
+
+msgid "Id"
+msgstr "ID"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Imported at"
+msgstr "インポート場所"
+
+msgid "Ansible role [%{name}] was deleted."
+msgstr "Ansible ロール [%{name}] が削除されました。"
+
+msgid "Could not delete the role"
+msgstr "ロールを削除できませんでした"
+
+msgid "A task to Sync Ansible Roles was created."
+msgstr "Ansible ロールの同期タスクが作成されました。"
+
+msgid "Could not sync roles"
+msgstr "ロールを同期できませんでした"
+
+msgid "Could not import roles"
+msgstr "ロールをインポートできませんでした"
+
+msgid "Result"
+msgstr "結果"
+
+msgid "Imported"
+msgstr "インポート済み"
+
+msgid "The following ansible roles were changed"
+msgstr "以下の Ansible ロールが変更されました"
+
+msgid "No changes in ansible roles detected."
+msgstr "Ansible ロールの変更が検出されませんでした。"
+
+msgid "Could not obsolete roles"
+msgstr "ロールが使用されないようにできませんでした"
+
+msgid "Obsoleted"
+msgstr "旧版"
+
+msgid "Could not fetch roles"
+msgstr "ロールを取得できませんでした"
+
+msgid "Ansible roles available to be imported"
+msgstr "インポート可能な Ansible ロール"
+
+msgid "Role Name"
+msgstr "ロール名"
+
+msgid "Action"
+msgstr "アクション"
+
+msgid "Variables"
+msgstr "変数"
+
+msgid "Ansible roles are being played. Job ID: %{id}"
+msgstr "Ansible ロールはプレイ中です。ジョブ ID: %{id}"
+
+msgid "Could not play roles on hosts"
+msgstr "ホストでロールをプレイできませんでした"
+
+msgid "Could not play roles on hostgroups"
+msgstr "ホストグループでロールをプレイできませんでした"
+
+msgid "Variable"
+msgstr "変数"
+
+msgid "Default Value"
+msgstr "デフォルト値"
+
+msgid "Type"
+msgstr "タイプ"
+
+msgid "Role"
+msgstr "ロール"
+
+msgid "Role Id"
+msgstr "ロール ID"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Hidden Value?"
+msgstr "値を非表示にしますか?"
+
+msgid "Validator"
+msgstr "バリデーター"
+
+msgid "Rule"
+msgstr "ルール"
+
+msgid "Override values"
+msgstr "値の上書き"
+
+msgid "Override"
+msgstr "上書き"
+
+msgid "Merge overrides"
+msgstr "上書きのマージ"
+
+msgid "Merge default value"
+msgstr "デフォルト値のマージ"
+
+msgid "Avoid duplicates"
+msgstr "重複の回避"
+
+msgid "Order"
+msgstr "順序"
+
+msgid "Values"
+msgstr "値"
+
+msgid "Match"
+msgstr "一致"
+
+msgid "Value"
+msgstr "値"
+
+msgid "Ansible variable [%{variable}] was created."
+msgstr "Ansible 変数 [%{variable}] が作成されました。"
+
+msgid "Could not create the ansible variable"
+msgstr "Ansible 変数を作成できませんでした"
+
+msgid "Ansible variable [%{variable}] was deleted."
+msgstr "Ansible 変数 [%{variable}] が削除されました。"
+
+msgid "Could not delete the variable"
+msgstr "変数を削除できませんでした"
+
+msgid "Ansible variable [%{variable}] updated."
+msgstr "Ansible 変数  [%{variable}] が更新されました。"
+
+msgid "Could not update the ansible variable"
+msgstr "Ansible 変数を更新できませんでした"
+
+msgid "The order in which values are resolved"
+msgstr "値が解決される順序"
+
+msgid "Could not import variables"
+msgstr "変数をインポートできませんでした"
+
+msgid "The following ansible variables were changed"
+msgstr "以下の Ansible 変数が変更されました"
+
+msgid "No changes in ansible variables detected."
+msgstr "変数の変更が検出されませんでした。"
+
+msgid "Could not obsolete variables"
+msgstr "変数が使用されないようにできませんでした"
+
+msgid "Override value, required if omit is false"
+msgstr "上書き値 (--omit が false の場合に必要)"
+
+msgid "Override value created."
+msgstr "上書き値が作成されました。"
+
+msgid "Could not create the override value"
+msgstr "上書き値を作成できませんでした"
+
+msgid "Override value deleted."
+msgstr "上書き値が削除されました。"
+
+msgid "Could not delete the override value"
+msgstr "上書き値を削除できませんでした"
+
+msgid ""
+"Ansible role %{name} is already inherited from a host group. Please use "
+"%{option} for direct association."
+msgstr ""
+"Ansible ロール %{name} はすでにホストグループから継承されています。直接の関連"
+"付けには %{option} を使用してください。"
+
+msgid "Ansible role %s is not assigned directly and cannot be removed."
+msgstr "Ansible ロール %s は直接割り当ておられず、削除できません。"
+
+msgid "FQDN"
+msgstr "FQDN"
+
+msgid "Host Group"
+msgstr "ホストグループ"
+
+msgid "Location"
+msgstr "ロケーション"
+
+msgid "Organization"
+msgstr "組織"
+
+msgid "Domain"
+msgstr "ドメイン"
+
+msgid "Foreman domain description"
+msgstr "Foreman ドメインの説明"
+
+msgid "Owner name"
+msgstr "所有者名"
+
+msgid "Owner email"
+msgstr "所有者メール"
+
+msgid "SSH authorized keys"
+msgstr "SSH 認証キー"
+
+msgid "Root password"
+msgstr "root パスワード"
+
+msgid "Foreman config groups"
+msgstr "Foreman 設定グループ"
+
+msgid "Puppet master"
+msgstr "Puppet マスター"
+
+msgid "Puppet environment"
+msgstr "Puppet 環境"
+
+msgid "Subnets"
+msgstr "サブネット"
+
+msgid "Network"
+msgstr "ネットワーク"
+
+msgid "Mask"
+msgstr "マスク"
+
+msgid "Gateway"
+msgstr "ゲートウェイ"
+
+msgid "Primary DNS"
+msgstr "プライマリー DNS"
+
+msgid "Secondary DNS"
+msgstr "セカンダリー DNS"
+
+msgid "From"
+msgstr "開始アドレス:"
+
+msgid "To"
+msgstr "終了アドレス:"
+
+msgid "Boot mode"
+msgstr "起動モード"
+
+msgid "IPAM"
+msgstr "IPAM"
+
+msgid "VLAN ID"
+msgstr "VLAN ID"
+
+msgid "MTU"
+msgstr "MTU"
+
+msgid "NIC delay"
+msgstr "NIC の遅延"
+
+msgid "Network type"
+msgstr "ネットワークタイプ"
+
+msgid "Network interfaces"
+msgstr "ネットワークインターフェイス"
+
+msgid "Interface Name"
+msgstr "インターフェイス名"
+
+msgid "Identifier"
+msgstr "ID"
+
+msgid "Attributes"
+msgstr "属性"
+
+msgid "MAC address"
+msgstr "MAC アドレス"
+
+msgid "IPv4 address"
+msgstr "IPv4 アドレス"
+
+msgid "IPv6 address"
+msgstr "IPv6 アドレス"
+
+msgid "Virtual"
+msgstr "仮想"
+
+msgid "Link"
+msgstr "リンク"
+
+msgid "Managed"
+msgstr "管理対象"
+
+msgid "Primary"
+msgstr "プライマリー"
+
+msgid "Provision"
+msgstr "プロビジョニング"
+
+msgid "IPv6 subnet"
+msgstr "IPv6 サブネット"
+
+msgid "Tag"
+msgstr "タグ"
+
+msgid "Attached to"
+msgstr "接続先"
+
+msgid "Attached devices"
+msgstr "接続されたデバイス"
+
+msgid "Subnet"
+msgstr "サブネット"
+
+msgid "Foreman Users"
+msgstr "Foreman ユーザー"
+
+msgid "First name"
+msgstr "名"
+
+msgid "Last name"
+msgstr "姓"
+
+msgid "Email"
+msgstr "電子メール"
+
+msgid "Full name"
+msgstr "フルネーム"
+
+msgid "Foreman Ansible Roles"
+msgstr "Foreman Ansible ロール"
+
+msgid "Ansible role check mode"
+msgstr "Ansible ロールのチェックモード"
+
+msgid "Host packages"
+msgstr "ホストのパッケージ"
+
+msgid "Host registration insights"
+msgstr "ホスト登録に関する見解"
+
+msgid "Host registration remote execution"
+msgstr "ホスト登録のリモート実行"
+
+msgid "Remote execution ssh keys"
+msgstr "リモート実行の SSH 鍵"
+
+msgid "Remote execution ssh user"
+msgstr "リモート実行の SSH ユーザー"
+
+msgid "Remote execution effective user method"
+msgstr "リモート実行の実効ユーザーメソッド"
+
+msgid "Remote execution connect by IP"
+msgstr "IP によるリモート実行接続"
+
+msgid "Manage Ansible roles on a host"
+msgstr "ホストでの Ansible ロールの管理"
+
+msgid "Inherited"
+msgstr "継承済み"
+
+msgid "Directly assigned"
+msgstr "直接割り当て"
+
+msgid "Could not play roles on a host"
+msgstr "ホストでロールをプレイできませんでした"
+
+msgid "Ansible roles were assigned to the host"
+msgstr "Ansible ロールがホストに割り当てられています"
+
+msgid "Could not assign roles to the host"
+msgstr "ホストにロールを割り当てることができませんでした"
+
+msgid "Associate an Ansible role"
+msgstr "Ansible ロールの関連付け"
+
+msgid "Associate the Ansible role even if it already is associated indirectly"
+msgstr ""
+"Ansible ロールがすでに間接的に関連付けられている場合でも、Ansible ロールを関"
+"連付けます。"
+
+msgid "Ansible role has been associated."
+msgstr "Ansible ロールが関連付けられました。"
+
+msgid "Could not associate the Ansible role"
+msgstr "Ansible ロールを関連付けられませんでした"
+
+msgid "Disassociate an Ansible role"
+msgstr "Ansible ロールの関連付けを解除します。"
+
+msgid "Ansible role has been disassociated."
+msgstr "Ansible ロールの関連付けが解除されました。"
+
+msgid "Could not disassociate the Ansible role"
+msgstr "Ansible ロールの関連付けを解除できませんでした"
+
+msgid "Manage Ansible roles on a hostgroup"
+msgstr "ホストグループでの Ansible ロールの管理"
+
+msgid "Could not play roles on a hostgroup"
+msgstr "ホストグループでロールをプレイできませんでした"
+
+msgid "Ansible roles were assigned to the hostgroup"
+msgstr "Ansible ロールがホストグループに割り当てられました"
+
+msgid "Could not assign roles to the hostgroup"
+msgstr "ホストグループにロールが割り当てることができませんでした"
+
+msgid "Ansible Callback Enabled"
+msgstr ""
