@@ -14,9 +14,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_ansible 0.5.0\n"
+"Project-Id-Version: hammer_cli_foreman_ansible 0.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-23 17:16+0100\n"
+"POT-Creation-Date: 2023-07-12 14:40+0000\n"
 "PO-Revision-Date: 2022-11-23 16:21+0000\n"
 "Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
 "Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
@@ -398,6 +398,9 @@ msgstr "Méthode d'utilisateur efficace pour l'exécution à distance"
 msgid "Remote execution connect by IP"
 msgstr "Exécution à distance connectée par IP"
 
+msgid "Ansible Callback Enabled"
+msgstr ""
+
 msgid "Manage Ansible roles on a host"
 msgstr "Gérer les rôles Ansible sur un hôte"
 
@@ -448,6 +451,3 @@ msgstr "Les rôles Ansible ont été assignés au groupe d'hôtes"
 
 msgid "Could not assign roles to the hostgroup"
 msgstr "Impossible d'attribuer des rôles au groupe d'hôtes"
-
-msgid "Ansible Callback Enabled"
-msgstr ""
