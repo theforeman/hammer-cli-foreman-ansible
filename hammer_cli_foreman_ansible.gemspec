@@ -17,6 +17,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
   spec.test_files    = Dir['{test}/**/*']
 
-  spec.add_dependency 'hammer_cli_foreman', '>= 0.12.0'
-  spec.add_dependency 'hammer_cli_foreman_remote_execution'
+  spec.required_ruby_version = '>= 2.7', '< 4'
+
+  spec.add_dependency 'hammer_cli_foreman', '~> 3.10'
+  spec.add_dependency 'hammer_cli_foreman_remote_execution', '~> 0.3.0'
 end
