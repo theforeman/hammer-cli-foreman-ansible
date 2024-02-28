@@ -49,4 +49,3 @@ module HammerCLIForemanAnsible
     autoload_subcommands
   end
 end
-

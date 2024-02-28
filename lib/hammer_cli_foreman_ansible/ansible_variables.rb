@@ -5,7 +5,6 @@ module HammerCLIForemanAnsible
     resource :ansible_variables
 
     class ListCommand < HammerCLIForeman::ListCommand
-
       output do
         field :id, _('Id')
 
