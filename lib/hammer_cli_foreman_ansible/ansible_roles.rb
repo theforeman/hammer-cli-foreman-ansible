@@ -101,8 +101,6 @@ module HammerCLIForemanAnsible
           field :variables, _("Variables")
           field :hosts_count, ("Hosts count")
           field :hostgroup_count, ("Hostgroup count")
-
-
         end
       end
 

@@ -11,6 +11,9 @@ group :test do
   gem 'minitest', '~> 5.18'
   gem 'minitest-spec-context'
   gem 'mocha'
+  gem 'rubocop', '~> 1.57.0'
+  gem 'rubocop-minitest', '~> 0.9.0'
+  gem 'rubocop-performance', '~> 1.5.2'
   gem 'simplecov'
   gem 'thor'
 end

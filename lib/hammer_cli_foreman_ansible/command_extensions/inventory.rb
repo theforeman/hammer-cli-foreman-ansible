@@ -42,7 +42,7 @@ module HammerCLIForemanAnsible
             collection :foreman_interfaces, _('Network interfaces') do
               field :name, _('Interface Name')
               field :identifier, _('Identifier')
-              field :attrs,  _('Attributes'),Fields::Field, hide_blank: true
+              field :attrs, _('Attributes'), Fields::Field, hide_blank: true
               field :mac, _('MAC address')
               field :ip, _('IPv4 address'), Fields::Field, hide_blank: true
               field :ip6, _('IPv6 address'), Fields::Field, hide_blank: true
@@ -106,7 +106,7 @@ module HammerCLIForemanAnsible
         unless cmd_obj.option_as_json?
           new_data = data['all']['hosts'].each_with_object([]) do |hostname, arr|
             data['_meta']['hostvars'][hostname]['foreman']['foreman_users'] = data['_meta']['hostvars'][hostname]['foreman']['foreman_users']&.map { |u| u[1] }
-            data['_meta']['hostvars'][hostname]['foreman_ansible_roles'] =  data['_meta']['hostvars'][hostname]['foreman_ansible_roles']&.map { |r| { 'name' => r } }
+            data['_meta']['hostvars'][hostname]['foreman_ansible_roles'] = data['_meta']['hostvars'][hostname]['foreman_ansible_roles']&.map { |r| { 'name' => r } }
             arr << {
               'hostname' => hostname
             }.merge(data['_meta']['hostvars'][hostname])

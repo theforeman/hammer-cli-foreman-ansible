@@ -20,3 +20,13 @@ require 'hammer_cli_foreman_ansible/version'
 require 'hammer_cli_foreman_ansible/i18n'
 require 'hammer_cli/i18n/find_task'
 HammerCLI::I18n::FindTask.define(HammerCLIForemanAnsible::I18n::LocaleDomain.new, HammerCLIForemanAnsible.version.to_s)
+
+begin
+  require 'rubocop/rake_task'
+rescue LoadError
+  # RuboCop is optional
+  task default: :test
+else
+  RuboCop::RakeTask.new
+  task default: [:rubocop, :test]
+end
