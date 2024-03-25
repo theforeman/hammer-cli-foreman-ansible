@@ -2,6 +2,6 @@
 
 module HammerCLIForemanAnsible
   def self.version
-    @version ||= Gem::Version.new '0.6.0'
+    @version ||= Gem::Version.new '0.7.0'
   end
 end
