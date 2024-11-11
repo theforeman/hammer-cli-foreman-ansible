@@ -10,15 +10,17 @@
 # Pierre-Emmanuel Dutang <dutangp@gmail.com>, 2022
 # Claer <transiblu@claer.hammock.fr>, 2022
 # Amit Upadhye <aupadhye@redhat.com>, 2023
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_ansible 0.5.0\n"
+"Project-Id-Version: hammer_cli_foreman_ansible 0.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-23 17:16+0100\n"
+"POT-Creation-Date: 2023-07-12 14:40+0000\n"
 "PO-Revision-Date: 2022-11-23 16:21+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2023\n"
+"Last-Translator: Ewoud Kohl van Wijngaarden "
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
 "Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -398,6 +400,9 @@ msgstr "Méthode d'utilisateur efficace pour l'exécution à distance"
 msgid "Remote execution connect by IP"
 msgstr "Exécution à distance connectée par IP"
 
+msgid "Ansible Callback Enabled"
+msgstr "Activer Ansible Callback"
+
 msgid "Manage Ansible roles on a host"
 msgstr "Gérer les rôles Ansible sur un hôte"
 
@@ -448,6 +453,3 @@ msgstr "Les rôles Ansible ont été assignés au groupe d'hôtes"
 
 msgid "Could not assign roles to the hostgroup"
 msgstr "Impossible d'attribuer des rôles au groupe d'hôtes"
-
-msgid "Ansible Callback Enabled"
-msgstr ""

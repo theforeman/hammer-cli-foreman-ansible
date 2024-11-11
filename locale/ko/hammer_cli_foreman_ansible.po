@@ -4,11 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Martin Liu <liuzh66@gmail.com>, 2022
-# tim123, 2022
-# 0868a4d1af5275b3f70b0a6dac4c99a4, 2022
 # Bryan Kearney <bryan.kearney@gmail.com>, 2022
-# Amit Upadhye <aupadhye@redhat.com>, 2022
+# 0868a4d1af5275b3f70b0a6dac4c99a4, 2022
 # Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
 #
 #, fuzzy
@@ -20,273 +17,274 @@ msgstr ""
 "PO-Revision-Date: 2022-11-23 16:21+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden "
 "<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
-"Language-Team: Chinese (China) (https://app.transifex.com/foreman/teams/114/"
-"zh_CN/)\n"
+"Language-Team: Korean (https://app.transifex.com/foreman/teams/114/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
+"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Manage ansible roles"
-msgstr "管理 ansible 角色"
+msgstr "Ansible 역할 관리"
 
 msgid "Manage ansible variables"
-msgstr "管理 ansible 变量"
+msgstr "Ansible 변수 관리"
 
 msgid "Ansible Inventory"
-msgstr "Ansible 清单"
+msgstr "Ansible 인벤토리"
 
 msgid "Full response as json"
-msgstr "作为 json 的完整响应"
+msgstr "JSON으로 전체 응답"
 
 msgid "Job Id"
-msgstr "作业 Id"
+msgstr "직업 ID"
 
 msgid "Data URL"
-msgstr "数据 URL"
+msgstr "데이터 URL"
 
 msgid "Id"
 msgstr "ID"
 
 msgid "Name"
-msgstr "名称"
+msgstr "이름 "
 
 msgid "Imported at"
-msgstr "导入于"
+msgstr "가져오기 위치"
 
 msgid "Ansible role [%{name}] was deleted."
-msgstr "Ansible 角色 [%{name}] 已被删除。"
+msgstr "Ansible 역할 [%{name} ] 삭제되었습니다."
 
 msgid "Could not delete the role"
-msgstr "无法删除角色"
+msgstr "역할을 삭제할 수 없습니다"
 
 msgid "A task to Sync Ansible Roles was created."
-msgstr "创建了同步 Ansible 角色的任务。"
+msgstr "Ansible 역할을 동기화하는 작업이 생성되었습니다."
 
 msgid "Could not sync roles"
-msgstr "无法同步角色"
+msgstr "역할을 동기화할 수 없습니다."
 
 msgid "Could not import roles"
-msgstr "无法导入角色"
+msgstr "역할을 가져올 수 없습니다"
 
 msgid "Result"
-msgstr "结果"
+msgstr "결과 "
 
 msgid "Imported"
-msgstr "导入"
+msgstr "가져오기"
 
 msgid "The following ansible roles were changed"
-msgstr "以下 ansible 角色已更改"
+msgstr "다음 ansible 역할이 변경되었습니다."
 
 msgid "No changes in ansible roles detected."
-msgstr "ansible 角色中没有检测到任何更改。"
+msgstr "Ansible 역할에 대한 변경 사항이 감지되지 않았습니다."
 
 msgid "Could not obsolete roles"
-msgstr "无法过时角色"
+msgstr "역할이 사용되지 않도록 할 수 없습니다."
 
 msgid "Obsoleted"
-msgstr "过时的"
+msgstr "사용 중단"
 
 msgid "Could not fetch roles"
-msgstr "无法获取角色"
+msgstr "역할을 가져올 수 없습니다"
 
 msgid "Ansible roles available to be imported"
-msgstr "可以导入的 Ansible 角色"
+msgstr "가져올 수 있는 Ansible 역할"
 
 msgid "Role Name"
-msgstr "角色名称"
+msgstr "역할 이름"
 
 msgid "Action"
-msgstr "操作"
+msgstr "동작 "
 
 msgid "Variables"
-msgstr "变量"
+msgstr "변수 "
 
 msgid "Ansible roles are being played. Job ID: %{id}"
-msgstr "Ansible 角色正在执行。作业 ID: %{id}"
+msgstr "Ansible 역할이 실행되고 있습니다. 작업 ID: %{id}"
 
 msgid "Could not play roles on hosts"
-msgstr "无法在主机上执行角色"
+msgstr "호스트에서 역할을 실행할 수 없습니다."
 
 msgid "Could not play roles on hostgroups"
-msgstr "无法在主机组上执行角色"
+msgstr "호스트 그룹에서 역할을 실행할 수 없습니다."
 
 msgid "Variable"
-msgstr "变量"
+msgstr "가변"
 
 msgid "Default Value"
-msgstr "默认值"
+msgstr "기본값 "
 
 msgid "Type"
-msgstr "类型"
+msgstr "유형 "
 
 msgid "Role"
-msgstr "角色"
+msgstr "역할 "
 
 msgid "Role Id"
-msgstr "角色 ID"
+msgstr "역할 ID"
 
 msgid "Description"
-msgstr "描述"
+msgstr "설명 "
 
 msgid "Hidden Value?"
-msgstr "隐藏值？"
+msgstr "숨겨진 값?"
 
 msgid "Validator"
-msgstr "验证器"
+msgstr "유효성 검사기 "
 
 msgid "Rule"
-msgstr "规则"
+msgstr "규칙 "
 
 msgid "Override values"
-msgstr "覆盖规则"
+msgstr "값 덮어쓰기 "
 
 msgid "Override"
-msgstr "覆盖"
+msgstr "덮어쓰기 "
 
 msgid "Merge overrides"
-msgstr "合并覆盖"
+msgstr "덮어쓰기 병합"
 
 msgid "Merge default value"
-msgstr "合并默认值"
+msgstr "기본값 병합"
 
 msgid "Avoid duplicates"
-msgstr "避免重复"
+msgstr "중복 방지"
 
 msgid "Order"
-msgstr "顺序"
+msgstr "순서"
 
 msgid "Values"
-msgstr "值"
+msgstr "값"
 
 msgid "Match"
-msgstr "匹配"
+msgstr "일치 "
 
 msgid "Value"
-msgstr "值"
+msgstr "값 "
 
 msgid "Ansible variable [%{variable}] was created."
-msgstr "Ansible 变量 [%{variable}] 已创建。"
+msgstr "Ansible 변수 [%{variable}]이 생성되었습니다."
 
 msgid "Could not create the ansible variable"
-msgstr "无法创建 ansible 变量"
+msgstr "Ansible 변수를 생성할 수 없습니다."
 
 msgid "Ansible variable [%{variable}] was deleted."
-msgstr "Ansible 变量 [%{variable}] 已被删除。"
+msgstr "Ansible 변수 [%{variable}]이/가 삭제되었습니다."
 
 msgid "Could not delete the variable"
-msgstr "无法删除变量"
+msgstr "변수를 삭제할 수 없습니다."
 
 msgid "Ansible variable [%{variable}] updated."
-msgstr "Ansible 变量 [%{variable}] 已更新。"
+msgstr "Ansible 변수 [%{variable}]이/가 업데이트되었습니다."
 
 msgid "Could not update the ansible variable"
-msgstr "无法更新 ansible 变量"
+msgstr "Ansible 변수를 업데이트할 수 없습니다."
 
 msgid "The order in which values are resolved"
-msgstr "值解析的順序"
+msgstr "값이 해결되는 순서 "
 
 msgid "Could not import variables"
-msgstr "无法导入变量"
+msgstr "변수를 가져올 수 없습니다."
 
 msgid "The following ansible variables were changed"
-msgstr "以下 ansible 变量已更改"
+msgstr "다음 ansible 변수가 변경되었습니다."
 
 msgid "No changes in ansible variables detected."
-msgstr "ansible 变量中没有检测到任何更改。"
+msgstr "Ansible 변수에서 변경 사항이 감지되지 않았습니다."
 
 msgid "Could not obsolete variables"
-msgstr "无法过时的变量"
+msgstr "변수가 사용되지 않도록 할 수 없습니다."
 
 msgid "Override value, required if omit is false"
-msgstr "覆盖值，omit 为 false 时必需"
+msgstr "덮어쓰기 값, omit이 false인 경우 필요함"
 
 msgid "Override value created."
-msgstr "已创建覆盖值。"
+msgstr "덮어쓰기 값이 생성되었습니다."
 
 msgid "Could not create the override value"
-msgstr "无法创建该覆盖值"
+msgstr "덮어쓰기 값을 생성할 수 없습니다."
 
 msgid "Override value deleted."
-msgstr "已删除覆盖值。"
+msgstr "덮어쓰기 값이 삭제되었습니다."
 
 msgid "Could not delete the override value"
-msgstr "无法删除覆盖值"
+msgstr "덮어쓰기 값을 삭제할 수 없습니다"
 
 msgid ""
 "Ansible role %{name} is already inherited from a host group. Please use "
 "%{option} for direct association."
-msgstr "Ansible 角色 %{name} 已从主机组继承。请使用 %{option} 进行直接关联。"
+msgstr ""
+"Ansible 역할 %{name} 호스트 그룹에서 이미 상속되었습니다. 직접 연결을 위해 "
+"%{option}을/를 사용하세요."
 
 msgid "Ansible role %s is not assigned directly and cannot be removed."
-msgstr "Ansible 角色 %s 没有被直接分配，且无法被删除。"
+msgstr "Ansible 역할 %s이/가 직접 할당되지 않으며 제거할 수 없습니다."
 
 msgid "FQDN"
 msgstr "FQDN"
 
 msgid "Host Group"
-msgstr "主机组"
+msgstr "호스트 그룹 "
 
 msgid "Location"
-msgstr "位置"
+msgstr "위치"
 
 msgid "Organization"
-msgstr "机构"
+msgstr "조직 "
 
 msgid "Domain"
-msgstr "域"
+msgstr "도메인 "
 
 msgid "Foreman domain description"
-msgstr "Foreman 域描述"
+msgstr "Foreman 도메인 설명"
 
 msgid "Owner name"
-msgstr "所有者名称"
+msgstr "소유자 이름"
 
 msgid "Owner email"
-msgstr "所有者电子邮件"
+msgstr "소유자 이메일"
 
 msgid "SSH authorized keys"
-msgstr "SSH 授权密钥"
+msgstr "SSH 인증 키"
 
 msgid "Root password"
-msgstr "Root 密码"
+msgstr "루트 암호"
 
 msgid "Foreman config groups"
-msgstr "Foreman 配置组"
+msgstr "Foreman 구성 그룹"
 
 msgid "Puppet master"
-msgstr "Puppet master"
+msgstr "Puppet 마스터"
 
 msgid "Puppet environment"
-msgstr "Puppet 环境"
+msgstr "Puppet 환경"
 
 msgid "Subnets"
-msgstr "子网"
+msgstr "서브넷 "
 
 msgid "Network"
-msgstr "网络"
+msgstr "네트워크"
 
 msgid "Mask"
-msgstr "mask"
+msgstr "마스크 "
 
 msgid "Gateway"
-msgstr "网关"
+msgstr "케이트웨이"
 
 msgid "Primary DNS"
-msgstr "主 DNS"
+msgstr "1차 DNS"
 
 msgid "Secondary DNS"
-msgstr "二级 DNS"
+msgstr "2차 DNS"
 
 msgid "From"
-msgstr "from"
+msgstr "부터 "
 
 msgid "To"
-msgstr "至"
+msgstr "까지 "
 
 msgid "Boot mode"
-msgstr "引导模式"
+msgstr "부팅 모드"
 
 msgid "IPAM"
 msgstr "IPAM"
@@ -298,154 +296,154 @@ msgid "MTU"
 msgstr "MTU"
 
 msgid "NIC delay"
-msgstr "NIC delay"
+msgstr "NIC 지연"
 
 msgid "Network type"
-msgstr "网络类型"
+msgstr "네트워크 유형 "
 
 msgid "Network interfaces"
-msgstr "网络接口"
+msgstr "네트워크 인터페이스 "
 
 msgid "Interface Name"
-msgstr "接口名称"
+msgstr "인터페이스 이름"
 
 msgid "Identifier"
-msgstr "鉴定"
+msgstr "식별자 "
 
 msgid "Attributes"
-msgstr "属性"
+msgstr "속성"
 
 msgid "MAC address"
-msgstr "MAC 地址"
+msgstr "MAC 주소"
 
 msgid "IPv4 address"
-msgstr "IPv4 地址"
+msgstr "IPv4 주소"
 
 msgid "IPv6 address"
-msgstr "IPv6 地址"
+msgstr "IPv6 주소"
 
 msgid "Virtual"
-msgstr "虚拟"
+msgstr "가상 "
 
 msgid "Link"
-msgstr "Link"
+msgstr "링크"
 
 msgid "Managed"
-msgstr "管理"
+msgstr "관리됨 "
 
 msgid "Primary"
-msgstr "主"
+msgstr "주"
 
 msgid "Provision"
-msgstr "置备"
+msgstr "프로비저닝 "
 
 msgid "IPv6 subnet"
-msgstr "IPv6 子网"
+msgstr "IPv6 서브넷"
 
 msgid "Tag"
-msgstr "标签"
+msgstr "태그"
 
 msgid "Attached to"
-msgstr "已連接至"
+msgstr "다음에 연결됨"
 
 msgid "Attached devices"
-msgstr "已連接的裝置"
+msgstr "연결된 장치"
 
 msgid "Subnet"
-msgstr "子网"
+msgstr "서브넷 "
 
 msgid "Foreman Users"
-msgstr "Foreman 用户"
+msgstr "Foreman 사용자 "
 
 msgid "First name"
-msgstr "名"
+msgstr "이름"
 
 msgid "Last name"
-msgstr "姓"
+msgstr "성"
 
 msgid "Email"
-msgstr "电子邮件"
+msgstr "이메일 "
 
 msgid "Full name"
-msgstr "全名"
+msgstr "전체 이름 "
 
 msgid "Foreman Ansible Roles"
-msgstr "Foreman Ansible 角色"
+msgstr "Foreman Ansible 역할"
 
 msgid "Ansible role check mode"
-msgstr "Ansible 角色检查模式"
+msgstr "Ansible 역할 확인 모드"
 
 msgid "Host packages"
-msgstr "主机软件包"
+msgstr "호스트 패키지"
 
 msgid "Host registration insights"
-msgstr "主机注册 insights"
+msgstr "호스트 등록 insights"
 
 msgid "Host registration remote execution"
-msgstr "主机注册远程执行"
+msgstr "호스트 등록 원격 실행"
 
 msgid "Remote execution ssh keys"
-msgstr "远程执行 ssh 密钥"
+msgstr "원격 실행 ssh 키"
 
 msgid "Remote execution ssh user"
-msgstr "远程执行 ssh 用户"
+msgstr "원격 실행 ssh 사용자"
 
 msgid "Remote execution effective user method"
-msgstr "远程执行有效用户方法"
+msgstr "원격 실행 효과적인 사용자 방법"
 
 msgid "Remote execution connect by IP"
-msgstr "通过 IP 进行远程执行连接"
+msgstr "IP로 원격 실행 연결"
 
 msgid "Ansible Callback Enabled"
-msgstr "启用了 Ansible 回调"
+msgstr "Ansible 콜백 활성화됨"
 
 msgid "Manage Ansible roles on a host"
-msgstr "管理主机上的 Ansible 角色"
+msgstr "호스트에서 Ansible 역할 관리"
 
 msgid "Inherited"
-msgstr "继承"
+msgstr "상속됨"
 
 msgid "Directly assigned"
-msgstr "直接分配"
+msgstr "직접 할당됨"
 
 msgid "Could not play roles on a host"
-msgstr "无法在主机上执行角色"
+msgstr "호스트에서 역할을 실행할 수 없습니다."
 
 msgid "Ansible roles were assigned to the host"
-msgstr "分配到主机的 Ansible 角色"
+msgstr "Ansible 역할이 호스트에 할당되었습니다."
 
 msgid "Could not assign roles to the host"
-msgstr "无法为主机分配角色"
+msgstr "호스트에 역할을 할당할 수 없습니다."
 
 msgid "Associate an Ansible role"
-msgstr "关联 Ansible 角色"
+msgstr "Ansible 역할 연결"
 
 msgid "Associate the Ansible role even if it already is associated indirectly"
-msgstr "关联 Ansible 角色，即使它已被间接关联"
+msgstr "이미 간접적으로 연결되어 있는 경우에도 Ansible 역할 연결"
 
 msgid "Ansible role has been associated."
-msgstr "Ansible 角色已关联。"
+msgstr "Ansible 역할이 연결되었습니다."
 
 msgid "Could not associate the Ansible role"
-msgstr "无法关联 Ansible 角色"
+msgstr "Ansible 역할을 연결할 수 없음"
 
 msgid "Disassociate an Ansible role"
-msgstr "解除关联 Ansible 角色"
+msgstr "Ansible 역할 분리"
 
 msgid "Ansible role has been disassociated."
-msgstr "Ansible 角色已被解除关联。"
+msgstr "Ansible 역할이 분리되었습니다."
 
 msgid "Could not disassociate the Ansible role"
-msgstr "无法解除 Ansible 角色关联"
+msgstr "Ansible 역할을 분리할 수 없음"
 
 msgid "Manage Ansible roles on a hostgroup"
-msgstr "管理 hostgroup 上的 Ansible 角色"
+msgstr "호스트 그룹에서 Ansible 역할 관리"
 
 msgid "Could not play roles on a hostgroup"
-msgstr "无法在主机组上执行角色"
+msgstr "호스트 그룹에서 역할을 실행할 수 없음"
 
 msgid "Ansible roles were assigned to the hostgroup"
-msgstr "分配给主机组的 Ansible 角色"
+msgstr "Ansible 역할은 호스트 그룹에 할당되었습니다."
 
 msgid "Could not assign roles to the hostgroup"
-msgstr "无法为主机组分配角色"
+msgstr "호스트 그룹에 역할을 할당할 수 없습니다."
