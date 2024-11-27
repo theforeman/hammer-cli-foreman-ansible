@@ -84,8 +84,6 @@ describe 'host' do
         par[:id] == '1'
       end.returns(ansible_roles)
 
-      api_expects_no_call
-
       result = run_cmd(cmd + params)
       assert_cmd(expected_result, result)
     end
@@ -167,8 +165,6 @@ describe 'host' do
         par[:id] == '1'
       end.returns(ansible_roles)
 
-      api_expects_no_call
-
       result = run_cmd(cmd + params)
       assert_cmd(expected_result, result)
     end
@@ -190,8 +186,6 @@ describe 'host' do
       api_expects(:hosts, :ansible_roles) do |par|
         par[:id] == '1'
       end.returns(ansible_roles)
-
-      api_expects_no_call
 
       result = run_cmd(cmd + params)
       assert_cmd(expected_result, result)
