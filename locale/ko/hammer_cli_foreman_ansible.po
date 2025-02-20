@@ -6,7 +6,7 @@
 # Translators:
 # Bryan Kearney <bryan.kearney@gmail.com>, 2022
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2022
-# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2025
 #
 #, fuzzy
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "POT-Creation-Date: 2023-07-12 14:40+0000\n"
 "PO-Revision-Date: 2022-11-23 16:21+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden "
-"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/foreman/teams/114/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -70,7 +70,7 @@ msgid "Result"
 msgstr "결과 "
 
 msgid "Imported"
-msgstr "가져오기"
+msgstr "가져오기됨"
 
 msgid "The following ansible roles were changed"
 msgstr "다음 ansible 역할이 변경되었습니다."
@@ -224,7 +224,7 @@ msgid "FQDN"
 msgstr "FQDN"
 
 msgid "Host Group"
-msgstr "호스트 그룹 "
+msgstr "호스트 그룹"
 
 msgid "Location"
 msgstr "위치"
@@ -308,7 +308,7 @@ msgid "Interface Name"
 msgstr "인터페이스 이름"
 
 msgid "Identifier"
-msgstr "식별자 "
+msgstr "식별자"
 
 msgid "Attributes"
 msgstr "속성"
@@ -335,7 +335,7 @@ msgid "Primary"
 msgstr "주"
 
 msgid "Provision"
-msgstr "프로비저닝 "
+msgstr "프로비저닝"
 
 msgid "IPv6 subnet"
 msgstr "IPv6 서브넷"
@@ -350,7 +350,7 @@ msgid "Attached devices"
 msgstr "연결된 장치"
 
 msgid "Subnet"
-msgstr "서브넷 "
+msgstr "서브넷"
 
 msgid "Foreman Users"
 msgstr "Foreman 사용자 "

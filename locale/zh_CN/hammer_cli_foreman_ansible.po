@@ -9,7 +9,7 @@
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2022
 # Bryan Kearney <bryan.kearney@gmail.com>, 2022
 # Amit Upadhye <aupadhye@redhat.com>, 2022
-# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2025
 #
 #, fuzzy
 msgid ""
@@ -19,7 +19,7 @@ msgstr ""
 "POT-Creation-Date: 2023-07-12 14:40+0000\n"
 "PO-Revision-Date: 2022-11-23 16:21+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden "
-"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/foreman/teams/114/"
 "zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -268,7 +268,7 @@ msgid "Network"
 msgstr "网络"
 
 msgid "Mask"
-msgstr "mask"
+msgstr "掩码"
 
 msgid "Gateway"
 msgstr "网关"
@@ -280,7 +280,7 @@ msgid "Secondary DNS"
 msgstr "二级 DNS"
 
 msgid "From"
-msgstr "from"
+msgstr "从"
 
 msgid "To"
 msgstr "至"
