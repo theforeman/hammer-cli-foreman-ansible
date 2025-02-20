@@ -10,7 +10,7 @@
 # Pierre-Emmanuel Dutang <dutangp@gmail.com>, 2022
 # Claer <transiblu@claer.hammock.fr>, 2022
 # Amit Upadhye <aupadhye@redhat.com>, 2023
-# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2025
 #
 #, fuzzy
 msgid ""
@@ -20,7 +20,7 @@ msgstr ""
 "POT-Creation-Date: 2023-07-12 14:40+0000\n"
 "PO-Revision-Date: 2022-11-23 16:21+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden "
-"<ewoud+transifex@kohlvanwijngaarden.nl>, 2024\n"
+"<ewoud+transifex@kohlvanwijngaarden.nl>, 2025\n"
 "Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -287,7 +287,7 @@ msgid "From"
 msgstr "De"
 
 msgid "To"
-msgstr "à"
+msgstr "À"
 
 msgid "Boot mode"
 msgstr "Mode de démarrage"
@@ -359,7 +359,7 @@ msgid "Subnet"
 msgstr "Sous-réseau"
 
 msgid "Foreman Users"
-msgstr "Utilisateurs Foremean"
+msgstr "Utilisateurs Foreman"
 
 msgid "First name"
 msgstr "Prénom"
