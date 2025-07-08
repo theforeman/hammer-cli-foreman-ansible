@@ -7,6 +7,7 @@ module HammerCLIForemanAnsible
         unless data['provider_type'] == 'Ansible'
           data.delete('ansible_callback_enabled')
           data.delete('ansible_check_mode')
+          data.delete('ansible_diff_mode')
         end
       end
 
@@ -14,6 +15,7 @@ module HammerCLIForemanAnsible
         definition.insert(:before, :description) do
           field :ansible_callback_enabled, _('Ansible Callback Enabled'), Fields::Boolean
           field :ansible_check_mode, _('Ansible Check Mode Enabled'), Fields::Boolean
+          field :ansible_diff_mode, _('Ansible Diff Mode Enabled'), Fields::Boolean
         end
       end
     end
