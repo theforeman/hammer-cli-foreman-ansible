@@ -10,7 +10,7 @@ group :test do
   gem 'ci_reporter_minitest', '~> 1.0.0', require: false
   gem 'minitest', '~> 5.18'
   gem 'minitest-spec-context'
-  gem 'mocha'
+  gem 'mocha', '~> 2.1.0'
   gem 'simplecov'
   gem 'theforeman-rubocop', '~> 0.1.0'
   gem 'thor'
