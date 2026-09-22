@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_ansible 0.8.2\n"
+"Project-Id-Version: hammer_cli_foreman_ansible 0.8.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 14:40+0000\n"
+"POT-Creation-Date: 2026-09-22 19:27+0200\n"
 "PO-Revision-Date: 2023-07-12 14:40+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,8 +204,8 @@ msgid "Could not delete the override value"
 msgstr ""
 
 msgid ""
-"Ansible role %{name} is already inherited from a host group. Please use "
-"%{option} for direct association."
+"Ansible role %{name} is already inherited from a host group. Please use %"
+"{option} for direct association."
 msgstr ""
 
 msgid "Ansible role %s is not assigned directly and cannot be removed."
@@ -386,6 +386,9 @@ msgid "Remote execution connect by IP"
 msgstr ""
 
 msgid "Ansible Callback Enabled"
+msgstr ""
+
+msgid "Ansible Check Mode Enabled"
 msgstr ""
 
 msgid "Manage Ansible roles on a host"

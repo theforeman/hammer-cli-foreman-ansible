@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_ansible 0.5.0\n"
+"Project-Id-Version: hammer_cli_foreman_ansible 0.8.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 14:40+0000\n"
-"PO-Revision-Date: 2023-07-12 14:40+0000\n"
+"POT-Creation-Date: 2026-09-22 19:27+0200\n"
+"PO-Revision-Date: 2026-09-22 19:27+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -44,8 +44,8 @@ msgid "Data URL"
 msgstr ""
 
 #: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:9
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:10
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:38
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:9
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:37
 msgid "Id"
 msgstr ""
 
@@ -82,13 +82,13 @@ msgstr ""
 
 #: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:44
 #: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:71
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:87
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:114
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:86
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:113
 msgid "Result"
 msgstr ""
 
 #: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:45
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:88
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:87
 msgid "Imported"
 msgstr ""
 
@@ -107,7 +107,7 @@ msgid "Could not obsolete roles"
 msgstr ""
 
 #: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:72
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:115
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:114
 msgid "Obsoleted"
 msgstr ""
 
@@ -131,162 +131,162 @@ msgstr ""
 msgid "Variables"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:117
-#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:128
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:115
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:126
 #: ../lib/hammer_cli_foreman_ansible/host.rb:26
 #: ../lib/hammer_cli_foreman_ansible/hostgroup.rb:26
 msgid "Ansible roles are being played. Job ID: %{id}"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:118
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:116
 msgid "Could not play roles on hosts"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:129
+#: ../lib/hammer_cli_foreman_ansible/ansible_roles.rb:127
 msgid "Could not play roles on hostgroups"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:12
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:11
 msgid "Variable"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:13
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:12
 msgid "Default Value"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:14
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:28
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:13
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:27
 #: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:57
 msgid "Type"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:16
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:15
 #: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:91
 msgid "Role"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:17
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:16
 msgid "Role Id"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:24
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:23
 #: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:39
 #: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:75
 #: ../lib/hammer_cli_foreman_ansible/command_extensions/inventory.rb:84
 msgid "Description"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:25
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:24
 msgid "Hidden Value?"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:27
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:26
 msgid "Validator"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:29
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:28
 msgid "Rule"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:31
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:30
 msgid "Override values"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:32
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:31
 msgid "Override"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:33
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:32
 msgid "Merge overrides"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:34
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:33
 msgid "Merge default value"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:35
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:34
 msgid "Avoid duplicates"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:36
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:35
 msgid "Order"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:37
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:36
 msgid "Values"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:39
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:38
 msgid "Match"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:40
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:39
 msgid "Value"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:50
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:49
 msgid "Ansible variable [%{variable}] was created."
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:51
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:50
 msgid "Could not create the ansible variable"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:57
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:56
 msgid "Ansible variable [%{variable}] was deleted."
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:58
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:57
 msgid "Could not delete the variable"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:64
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:63
 msgid "Ansible variable [%{variable}] updated."
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:65
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:64
 msgid "Could not update the ansible variable"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:67
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:66
 msgid "The order in which values are resolved"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:84
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:83
 msgid "Could not import variables"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:96
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:123
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:95
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:122
 msgid "The following ansible variables were changed"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:98
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:125
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:97
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:124
 msgid "No changes in ansible variables detected."
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:111
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:110
 msgid "Could not obsolete variables"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:138
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:137
 msgid "Override value, required if omit is false"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:140
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:139
 msgid "Override value created."
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:141
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:140
 msgid "Could not create the override value"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:150
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:149
 msgid "Override value deleted."
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:151
+#: ../lib/hammer_cli_foreman_ansible/ansible_variables.rb:150
 msgid "Could not delete the override value"
 msgstr ""
 
@@ -546,8 +546,12 @@ msgstr ""
 msgid "Remote execution connect by IP"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_ansible/command_extensions/job_template.rb:14
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/job_template.rb:15
 msgid "Ansible Callback Enabled"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_ansible/command_extensions/job_template.rb:16
+msgid "Ansible Check Mode Enabled"
 msgstr ""
 
 #: ../lib/hammer_cli_foreman_ansible/host.rb:9
