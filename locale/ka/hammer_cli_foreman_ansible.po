@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_ansible 0.8.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 14:40+0000\n"
+"POT-Creation-Date: 2026-09-22 19:27+0200\n"
 "PO-Revision-Date: 2022-11-23 16:21+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023\n"
 "Language-Team: Georgian (https://app.transifex.com/foreman/teams/114/ka/)\n"
@@ -393,6 +393,9 @@ msgstr "დაშორებული გაშვების IP-ით მი
 
 msgid "Ansible Callback Enabled"
 msgstr "Ansible-ის უკუგამოძახება ჩართულია"
+
+msgid "Ansible Check Mode Enabled"
+msgstr ""
 
 msgid "Manage Ansible roles on a host"
 msgstr "ჰოსტზე Ansible-ს როლების მართვა"
